@@ -13,21 +13,26 @@ window.addEventListener('load', () => {
       newPoint.classList.add('slider__point');
       newPoint.addEventListener('click', () => {
          showImage(el);
+         setActivePoint(newPoint);
       });
       sliderPointWrapper.appendChild(newPoint)
    });
+   document.querySelectorAll('.slider__point')[currentSliderIndex()].classList.add('slider__point--active');
 
    // slider buttons
    sliderWrapper.style.height = allSliderImages[currentSliderIndex()].clientHeight + 'px';
    sliderBtnLeft.addEventListener('click', () => {
-      currentSliderIndex();
-      const currentImgIndex = currentSliderIndex();
-      showAdjacentImage(currentImgIndex, 'left');
+      arrowListener('left');
    });
    sliderBtnRight.addEventListener('click', () => {
-      const currentImgIndex = currentSliderIndex();
-      showAdjacentImage(currentImgIndex, 0);
+      arrowListener('right');
    });
+
+   function arrowListener(direction) {
+      const currentImgIndex = currentSliderIndex();
+      const nextIndex = showAdjacentImage(currentImgIndex, direction);
+      setActivePoint(document.querySelectorAll('.slider__point')[nextIndex]);
+   };
 
    showAdjacentImage = (index, direction) => {
       allSliderImages[index].classList.add('opacity-0');
@@ -36,6 +41,7 @@ window.addEventListener('load', () => {
       else
          nextIndex = index === allSliderImages.length - 1 ? 0 : index + 1;
       allSliderImages[nextIndex].classList.remove('opacity-0');
+      return nextIndex;
    };
 
    showImage = image => {
@@ -50,5 +56,12 @@ window.addEventListener('load', () => {
          if (allSliderImages[i].classList.contains('opacity-0')) continue;
          return i
       }
+   };
+
+   function setActivePoint(newPoint) {
+      document.querySelectorAll('.slider__point').forEach(el => {
+         el.classList.remove('slider__point--active');
+      });
+      newPoint.classList.add('slider__point--active');
    };
 });

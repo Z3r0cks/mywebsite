@@ -1,0 +1,35 @@
+.header {
+   &__logo {
+      cursor: pointer;
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+   }
+   &__bgcWrapper {
+      position: absolute;
+      display: flex;
+      height: 33.333%;
+      width: 100%;
+
+      &__2 {
+         top: 33.333%;
+      }
+
+      &__3 {
+         top: 66.666%;
+      }
+   }
+
+   &__bgc {
+      width: 33.333%;
+   }
+
+   &__logoWrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      width: 100px;
+   }
+}

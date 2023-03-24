@@ -11,24 +11,20 @@
 
    &__img {
       position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin: 0 auto;
       width: 100%;
+      height: 500px;
       overflow: hidden;
-      // top: 0;
-      // left: 0;
-      // bottom: 0;
-      // right: 0;
-      // max-height: 500px;
       transition: 0.7s;
-      // object-fit: cover;
-      // &:hover + .slider__pointWrapper {
-      //    opacity: 0.5;
-      // }
+      object-fit: cover;
       @media (min-width: $bp-md) {
          border-radius: $border-radius_image;
+      }
+      @media (min-width: $bp-lg) {
+         height: 600px;
+      }
+      @media (min-width: $bp-lg) {
+         height: 700px;
       }
    }
 
@@ -56,9 +52,13 @@
       border-radius: 50%;
       background-color: $c-white;
       transition: 0.7s;
-      opacity: 0.5;
+      opacity: 0.3;
       margin: 0 5px;
       &:hover {
+         opacity: 1;
+      }
+
+      &--active {
          opacity: 1;
       }
 
