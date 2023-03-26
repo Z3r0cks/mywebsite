@@ -8235,17 +8235,10 @@ header {
 .header__bgcWrapper {
   position: absolute;
   display: flex;
-  height: 33.333%;
   width: 100%;
 }
-.header__bgcWrapper__2 {
-  top: 33.333%;
-}
-.header__bgcWrapper__3 {
-  top: 66.666%;
-}
 .header__bgc {
-  width: 33.333%;
+  position: absolute;
 }
 .header__logoWrapper {
   position: relative;
@@ -8253,4 +8246,20 @@ header {
   flex-direction: column;
   height: 100px;
   width: 100px;
+}
+.header__bcScale {
+  cursor: pointer;
+  transition: 0.3s;
+  top: 0;
+  width: 3.1rem;
+  opacity: 0.3;
+}
+.header__bcScale:hover {
+  opacity: 1;
+}
+.header__bcScaleWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: -3.1rem;
 }/*# sourceMappingURL=style.css.map */

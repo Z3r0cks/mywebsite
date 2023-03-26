@@ -9,20 +9,20 @@
    &__bgcWrapper {
       position: absolute;
       display: flex;
-      height: 33.333%;
+      // height: 33.333%;
       width: 100%;
 
-      &__2 {
-         top: 33.333%;
-      }
+      // &__2 {
+      //    // top: 33.333%;
+      // }
 
-      &__3 {
-         top: 66.666%;
-      }
+      // &__3 {
+      //    // top: 66.666%;
+      // }
    }
 
    &__bgc {
-      width: 33.333%;
+      position: absolute;
    }
 
    &__logoWrapper {
@@ -31,5 +31,26 @@
       flex-direction: column;
       height: 100px;
       width: 100px;
+   }
+
+   &__bcScale {
+      cursor: pointer;
+      transition: $transition;
+      top: 0;
+      width: 3.1rem;
+      opacity: 0.3;
+      &:hover {
+         opacity: 1;
+      }
+
+      // &--9 {
+      // }
+
+      &Wrapper {
+         position: absolute;
+         display: flex;
+         flex-direction: column;
+         right: -3.1rem;
+      }
    }
 }

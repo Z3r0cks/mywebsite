@@ -8,3 +8,5 @@ TODO: Header
    Menu
    Size
    Style
+
+Obfuscator
