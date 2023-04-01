@@ -35,20 +35,19 @@ window.addEventListener('load', () => {
    };
 
    showAdjacentImage = (index, direction) => {
-      allSliderImages[index].classList.add('opacity-0');
       if (direction === 'left')
          nextIndex = index === 0 ? allSliderImages.length - 1 : index - 1;
       else
          nextIndex = index === allSliderImages.length - 1 ? 0 : index + 1;
+      allSliderImages[index].classList.add('opacity-0');
       allSliderImages[nextIndex].classList.remove('opacity-0');
       return nextIndex;
    };
 
    showImage = image => {
       allSliderImages.forEach(el => {
-         el.classList.add('opacity-0');
+         el == image ? el.classList.remove('opacity-0') : el.classList.add('opacity-0');
       });
-      image.classList.remove('opacity-0');
    };
 
    function currentSliderIndex() {
@@ -60,8 +59,7 @@ window.addEventListener('load', () => {
 
    function setActivePoint(newPoint) {
       document.querySelectorAll('.slider__point').forEach(el => {
-         el.classList.remove('slider__point--active');
+         el == newPoint ? newPoint.classList.add('slider__point--active') : el.classList.remove('slider__point--active');
       });
-      newPoint.classList.add('slider__point--active');
    };
 });

@@ -9,16 +9,7 @@
    &__bgcWrapper {
       position: absolute;
       display: flex;
-      // height: 33.333%;
       width: 100%;
-
-      // &__2 {
-      //    // top: 33.333%;
-      // }
-
-      // &__3 {
-      //    // top: 66.666%;
-      // }
    }
 
    &__bgc {
@@ -29,8 +20,9 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      height: 100px;
-      width: 100px;
+      height: 95px;
+      width: 95px;
+      border: 3px black solid;
    }
 
    &__bcScale {
@@ -43,14 +35,11 @@
          opacity: 1;
       }
 
-      // &--9 {
-      // }
-
       &Wrapper {
          position: absolute;
          display: flex;
          flex-direction: column;
-         right: -3.1rem;
+         right: -3.5rem;
       }
    }
 }

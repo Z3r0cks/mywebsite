@@ -8,23 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./logo.js"></script>
-    <script src="./x3.js"></script>
-    <!-- <script src="./slider.js"></script> -->
+    <!-- <script src="./x3.js"></script> -->
+    <script src="./slider.js"></script>
 </head>
 
 <body>
     <header class="mb-xs-1">
         <div class="header__logoWrapper">
-            <img class="header__logo" src="./assets/utility/logo3.png" alt="Logo">
             <div class="header__bcScaleWrapper">
                 <button class="header__bcScale header__bcScale--9">9px</button>
                 <button class="header__bcScale header__bcScale--81">81px</button>
                 <button class="header__bcScale header__bcScale--729">729px</button>
+                <!-- Has a reason why this two are hidden -->
+                <!-- document.getElementById("btn4").click() -->
+                <button class="header__bcScale header__bcScale--6561 display-none" id="btn4">6561px</button>
+                <!-- document.getElementById("btn5").click() -->
+                <button class="header__bcScale header__bcScale--59049 display-none" id="btn5">59049px</button>
             </div>
         </div>
     </header>
     <main>
         <div class="container">
+            <div class="img img__head mb-2"></div>
             <div class="slider__wrapper mb-xl-5">
                 <img class="slider__img opacity-0" src="./assets/img/815-1920x1080.jpg" alt="">
                 <img class="slider__img" src="./assets/img/741-900x900.jpg" alt="">
@@ -35,6 +40,7 @@
                 <img id="sliderBtnRight" class="slider__arrow slider__arrow--right" src="./assets/svg/arrow-right.svg"
                     alt="Arror Right">
             </div>
+        </div>
     </main>
     <footer>
 
