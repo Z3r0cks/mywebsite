@@ -1,6 +1,6 @@
 $base_size: -4px;
 $size_increment: -4px;
-$base_color: #999999;
+$base_color: #AEAEAE;
 
 .main_img {
    &-container {
@@ -9,6 +9,7 @@ $base_color: #999999;
       margin: 0;
       padding: 0;
       margin-top: 2rem;
+      margin-left: 1rem;
    }
 
    &-img {
@@ -18,14 +19,14 @@ $base_color: #999999;
       margin: 0;
    }
 
-   @for $i from 1 through 10 {
+   @for $i from 1 through 5 {
       &-b#{$i} {
          content: "";
          position: absolute;
          z-index: -$i;
          
          // Berechne die Graustufen, indem du den Farbwert dunkler machst
-         background-color: darken($base_color, ($i - 1) * 5%);
+         background-color: darken($base_color, ($i - 1) * 16%);
          
          // Berechne die Border-Größen
          $size: $base_size + ($i - 1) * $size_increment;
