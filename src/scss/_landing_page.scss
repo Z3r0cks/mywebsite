@@ -1,56 +1,134 @@
 .lp_header {
-   display: flex;
-   justify-content: space-between;
+   display: none;
    
-   &__container {
+   @include breakpoint("sm"){
       display: flex;
+      justify-content: space-between;
+      padding-bottom: 2rem;
       flex-direction: column;
+      
+      &__container {
+         display: flex;
+         flex-direction: column;
+      }
+      
+      &__img {
+         display: block;
+         align-self: flex-start;
+      }
    }
-
-   &__img {
-      align-self: flex-start;
-
-      // &--img {
-      //    @media (max-width: 992px) {
-      //       width: 75%;
-      //    }
-      // }
-   }
-
+   
+   
    &__pre-hw {
-      font-size: 12px;
-      line-height: 10px;
-      margin-top: 2rem;
-   }
+      display: none;
+      
+      @include breakpoint("sm"){
+         display: flex;
+         font-size: 16px;
+         line-height: 12px;
+         margin-top: 2rem;
+      }
 
+      @include breakpoint("sm"){
+         font-size: 16px;
+         line-height: 13px;
+      }
+
+      @include breakpoint("md"){
+         font-size: 22px;
+         line-height: 15px;
+      }
+
+      @include breakpoint("lg"){
+         font-size: 12px;
+         line-height: 10px;
+      }
+
+      @include breakpoint("xl"){
+         font-size: 14px;
+         line-height: 11px;
+      }
+
+      @include breakpoint("xxl"){
+         font-size: 16px;
+         line-height: 12px;
+      }
+   }
+   
    &__pre-code {
       display: inline-block;
-      margin-top: 1rem;
-      
-      @media (max-width: $bp-xl) {
-         font-size: 10px;
+      // margin-top: 1rem;
+
+      @include breakpoint("lg"){
+         font-size: 12px;
       }
-   
+
+      @include breakpoint("xl"){
+         font-size: 13px;
+      }
+
+      @include breakpoint("xxl"){
+         font-size: 15px;
+      }
+   }
+
+   @include breakpoint("sm"){
+      margin-bottom: 3rem;
+   }
+
+   @include breakpoint("lg"){
+      flex-direction: row;
+      margin-bottom: 5rem;
    }
 }
 
 .lp_name {
    position: relative;
    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-   font-size: 200px;
-   $name_mt: 10rem;
-   margin-top: 9rem;
+   font-size: 34px;
+   margin-top: 2rem;
+   
+   @include breakpoint("xs"){
+      font-size: 60px;
+   }
 
+   @include breakpoint("mid"){
+      font-size: 85px;
+   }
+   
+   @include breakpoint("sm"){
+      font-size: 115px;
+      margin-top: 0rem;
+      margin-bottom: 5rem;
+   }
+
+   @include breakpoint("lg"){
+      font-size: 170px;
+      margin-bottom: 10rem;
+   }
+   
    &-black {
       position: absolute;
       font-size: inherit;
-      top: 5px;
-      left: 5px;
+      top: 2px;
+      left: 2px;
       color: #000000;
+
+      @include breakpoint("sm"){
+         top: 3px;
+         left: 3px;
+      }
+
+      @include breakpoint("lg"){
+         top: 5px;
+         left: 5px;
+      }
 
       &-sure {
          margin-top: calc($name_mt + 35px);
       }
+
+
    }
 
    &-white {
@@ -58,9 +136,33 @@
       color: #ffffff;
    }
 
-   &-surename {
-      margin-left: 1rem;
-      margin-top: $name_mt;
+   &--surename {
+      margin-top: 0.5rem;
+      
+      @include breakpoint("xs"){
+         margin-top: 2rem;
+      }
+
+      @include breakpoint("mid"){
+         margin-top: 3rem;
+      }
+
+      @include breakpoint("sm"){
+         margin-top: 5rem;
+      }
+
+      @include breakpoint("lg"){
+         margin-top: 8rem;
+      }
    }
 }
 
+.small_size {
+   & p{
+      font-size: 17px;
+   }
+
+   @include breakpoint("sm"){
+      display: none;
+   }
+}

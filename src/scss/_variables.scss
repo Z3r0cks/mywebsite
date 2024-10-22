@@ -53,7 +53,10 @@ Breakpoint Settings
 $media-direction: min; // min / max — default is min (mobile first)
 
 $breakpoints: (
-   "xs": 0,
+   "xxxs": 0px,
+   "xxs": 150px,
+   "xs": 280px,
+   "mid": 390px,
    "sm": 576px,
    "md": 768px,
    "lg": 992px,
@@ -61,7 +64,10 @@ $breakpoints: (
    "xxl": 1920px
 );
 
-$bp-xs: 0;
+$bp-xxxs: 0px;
+$bp-xxs: 150px;
+$bp-xs: 280px ;
+$bp-mid: 576px;
 $bp-sm: 576px;
 $bp-md: 768px;
 $bp-lg: 992px;

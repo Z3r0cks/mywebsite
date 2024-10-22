@@ -1,0 +1,45 @@
+.link_logo{
+   margin-top: 1rem;
+   width: 25%;
+   margin-right: 5px;
+   
+   &--github {
+      width: 28%;
+      margin-right: 0px;
+
+      @include breakpoint("xs") {
+         margin-right: 0px;
+      }
+   }
+   
+   @include breakpoint("xs") {
+      margin-right: 20px;
+   }
+
+   @include breakpoint("mid") {
+      margin-right: 26px;
+   }
+
+   @include breakpoint("sm") {
+      width: 12%;
+   }
+
+   @include breakpoint("xxl") {
+      width: 7%;
+      margin-bottom: 2rem;
+   }
+
+   &--github {
+      @include breakpoint("xs") {
+         margin-right: 0px;
+      }
+
+      @include breakpoint("mid") {
+         margin-right: 10px;
+      }
+
+      @include breakpoint("md") {
+         width: 9%;
+      }
+   }
+}

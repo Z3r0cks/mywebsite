@@ -1,13 +1,22 @@
 .devBtn {
    &:after {
+      @include breakpoint("xxxs") {
+         content: "XXXS";
+      }
+      @include breakpoint("xxs") {
+         content: "XXS";
+      }
       @include breakpoint("xs") {
          content: "XS";
+      }
+      @include breakpoint("mid") {
+         content: "MID";
       }
       @include breakpoint("sm") {
          content: "SM";
       }
       @include breakpoint("md") {
-         content: "MD";
+         content: "MEDI";
       }
       @include breakpoint("lg") {
          content: "LG";

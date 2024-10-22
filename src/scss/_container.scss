@@ -5,23 +5,26 @@ html {
 .container {
    // display: flex;
    margin: 0 auto;
-   @media (min-width: $bp-xs) {
-      width: 100%;
+   @include breakpoint("xs") {
+      width: 90%;
       padding: 0;
    }
-   // @media (min-width: $bp-sm) {
-   //    width: 25rem;
-   // }
-   // @media (min-width: $bp-md) {
-   //    width: 27rem;
-   // }
-   @media (min-width: $bp-md) {
-      width: 50rem;
+   @include breakpoint("mid") {
+      width: 83%;
    }
-   @media (min-width: $bp-xl) {
+   @include breakpoint("sm") {
+      width: 80%;
+   }
+   @include breakpoint("md") {
+      width: 75%;
+   }
+   @include breakpoint("lg") {
+      width: 55rem;
+   }
+   @include breakpoint("xl") {
       width: 60rem;
    }
-   @media (min-width: $bp-xxl) {
-      width: 90rem;
+   @include breakpoint("xxl") {
+      width: 70rem;
    }
 }
