@@ -1,12 +1,9 @@
-# mywebsite
-TODO: Slider
-   Point size on mobile
-   Point Active
-   Testing
+# Repository for my website
 
-TODO: Header
-   Menu
-   Size
-   Style
+Website still under construction.
 
-Obfuscator
+## Next steps:
+
+- Add timeline
+- Add database access with more information and password for companies
+- Add portfolio
