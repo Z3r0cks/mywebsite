@@ -8659,4 +8659,39 @@ header {
     right: -12rem;
     transform: rotate(-45deg);
   }
+}
+
+.boxWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -15px;
+}
+.boxWrapper__inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.boxWrapper__inner :first-child {
+  margin-bottom: 100px;
+}
+.boxWrapper__a {
+  display: inline-block;
+  border: solid 1px #e5e5e5;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.boxWrapper__a span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  line-height: 2;
+  color: #cacaca;
+}
+.boxWrapper__a:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

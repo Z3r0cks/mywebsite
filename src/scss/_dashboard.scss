@@ -1,0 +1,38 @@
+.boxWrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 0 -15px;
+
+   &__inner {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      :first-child {
+         margin-bottom: 100px;
+      }
+   }
+
+   &__a {
+      display: inline-block;
+      border: solid 1px #e5e5e5;
+      position: relative;
+      height: 300px;
+      width: 300px;
+      transition: transform 0.3s;
+
+      & span {
+         position: absolute;
+         transform: translate(-50%, -50%);
+         left: 50%;
+         top: 50%;
+         font-size: 40px;
+         line-height: 2;
+         color: #cacaca;
+      }
+   }
+
+   &__a:hover {
+      transform: scale(1.1);
+   }
+}
