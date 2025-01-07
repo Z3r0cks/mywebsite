@@ -44,12 +44,12 @@ try {
 
     <div class="boxWrapper">
         <div class="boxWrapper__inner">
-            <a class="boxWrapper__a" href="about_me"><img width="100%" src="./assets/img/dashboard_about_me.png" alt=""></a>
-            <a class="boxWrapper__a" href="documents"><img width="85%" src="./assets/img/documents.png" alt=""></a></a>
+            <a class="boxWrapper__a" href="about_me"><img width="90%" src="./assets/img/dashboard_about_me.png" alt=""></a>
+            <a class="boxWrapper__a" href="documents"><img width="73%" src="./assets/img/documents.png" alt=""></a></a>
         </div>
         <div class="boxWrapper__inner">
-            <a class="boxWrapper__a" href="experience"><span>Erfahrungen</span></a>
-            <a class="boxWrapper__a" href="studium"><span>Medien-informatik</span></a>
+            <a class="boxWrapper__a" href="experience"><img width="110%" src="./assets/img/exp.png" alt=""></a></a>
+            <a class="boxWrapper__a" href="studium"><img width="110%" src="./assets/img/mi_dash.png" alt=""></a></a>
         </div>
     </div>
     </div>

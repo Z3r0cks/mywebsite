@@ -24,16 +24,11 @@ require './includes/auth.php';
 
       <button class="accordion">Hochschullehre</button>
       <div class="panel">
-         <p style="text-align: justify;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus voluptatum, repellendus nihil sunt quasi magnam. Alias ipsum libero tempora, at exercitationem laboriosam illum nostrum voluptatibus. Quos nobis repellendus obcaecati.
-            Minima, unde. Consequatur expedita odio possimus architecto. Ab, quisquam. Cum, dolores. Cum voluptates laboriosam minima perspiciatis ullam esse adipisci praesentium unde eligendi earum. Fugiat, aperiam non. Neque, doloribus temporibus! Harum.
-            Voluptates sit autem nam amet hic error ad vero culpa vitae dolorem quia dolor non sunt harum, ut perferendis quae ipsa, porro adipisci fugit. Quia eligendi placeat quae labore nam?</p>
          <video class="ml-2" style="clear:right; float: right" width="480" autoplay controls loop muted>
             <source src="./assets/videos/teaching.mp4">
             Your browser does not support the video tag.
          </video>
-         <p style="text-align: justify;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus voluptatum, repellendus nihil sunt quasi magnam. Alias ipsum libero tempora, at exercitationem laboriosam illum nostrum voluptatibus. Quos nobis repellendus obcaecati.
-            Minima, unde. Consequatur expedita odio possimus architecto. Ab, quisquam. Cum, dolores. Cum voluptates laboriosam minima perspiciatis ullam esse adipisci praesentium unde eligendi earum. Fugiat, aperiam non. Neque, doloribus temporibus! Harum.
-            Voluptates sit autem nam amet hic error ad vero culpa vitae dolorem quia dolor non sunt harum, ut perferendis quae ipsa, porro adipisci fugit. Quia eligendi placeat quae labore nam?</p>
+         <p style="text-align: justify;">Seit dem fünften Semster im Bachelor betreue ich Erst- und Zweitsemester in den Modulen "Entwicklung Interaktiver Medien", welcher in "Creative Coding" geändert wurde. Während des Bachelors war die Aufgabe die Bereuung der Studierende Bei den praktischen Aufgaben, die im Bereich Programmierung, Konzeption in Zusammenhang mit dem Internet of Things. Nach dem Bachelorabschluss durfte ich die Module als Lehrbeauftragter übernehmen, bei der auch die Lehre, Planung und Prüfungen dazu gehören. Die Erstellung der Lehrinhalte und das leiten eines Teams von Betreuern. Hierdurch habe ich viel über die Ditaktik lernen dürfen, und habe auch eine Sicht dafür bekommen, wie Lehre und Software für Lehre aufgebaut sein sollte.</p>
       </div>
 
 
@@ -45,31 +40,23 @@ require './includes/auth.php';
             Your browser does not support the video tag.
          </video>
 
-         <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci beatae optio nulla sit incidunt atque dolorum, nemo, vitae aliquam tempore? Ratione sed voluptas modi sequi porro in enim ipsum?
-            Accusantium ipsum expedita rerum maxime quis nisi dignissimos adipisci exercitationem aliquam quo, tenetur provident ratione alias fugiat numquam cupiditate nesciunt molestiae, magnam illum! Quas recusandae exercitationem perferendis? Ullam, eius omnis?
-            Magnam soluta, sequi impedit quae aliquid, voluptates non minus beatae porro eos architecto unde praesentium, eum cupiditate? Ea, consequatur officia possimus totam aspernatur reprehenderit ex dicta, repudiandae provident sint amet!
-            Culpa magnam cupiditate, necessitatibus similique harum ab eius aliquid eos recusandae quaerat quae dolores maxime quam rem reiciendis ex cum earum. Eligendi quam iste cum. Impedit unde autem vitae praesentium.
+         <p style="text-align: justify;">Teil des Masters ist ein Forschungsporjekt, welches sich auf die ersten zwei Semester ersteckt. Hierbei wurde in einem dreiköpfigen Team aus zwei Gestaltern und mich als Entwickler, eine Webapp entwickelt, die Essen erkennen soll, und die entprechenden Nährwerte auf einem Augmented Reality-Tisch projiziert. Die Webapp kommuniziert über Websockets mit der KI (CNN), die auf einem Server läuft. Das Model wurde mit TensorFlow geschrieben und die selbstständig mit eigenen Trainingsdaten trainiert. Im Video die Vorstellung der App.</p>
       </div>
 
 
       <button class="accordion">Masterthesis - Synthesized Sensor Data from Neural Radiance Fields</button>
       <div class="panel">
 
-         <video class="ml-2" style="clear:right; float: right" width="480  " controls>
-            <source src="./assets/videos/TAR.mp4">
-            Your browser does not support the video tag.
-         </video>
+      <img style="clear:right; float: right" class="ml-2 mb-1" width="80%" src="./assets/img/result1.png" alt="">
+      <img style="clear:right; float: right" class="ml-2" width="80%" src="./assets/img/result2.png" alt="">
 
-         <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci beatae optio nulla sit incidunt atque dolorum, nemo, vitae aliquam tempore? Ratione sed voluptas modi sequi porro in enim ipsum?
-            Accusantium ipsum expedita rerum maxime quis nisi dignissimos adipisci exercitationem aliquam quo, tenetur provident ratione alias fugiat numquam cupiditate nesciunt molestiae, magnam illum! Quas recusandae exercitationem perferendis? Ullam, eius omnis?
-            Magnam soluta, sequi impedit quae aliquid, voluptates non minus beatae porro eos architecto unde praesentium, eum cupiditate? Ea, consequatur officia possimus totam aspernatur reprehenderit ex dicta, repudiandae provident sint amet!
-            Culpa magnam cupiditate, necessitatibus similique harum ab eius aliquid eos recusandae quaerat quae dolores maxime quam rem reiciendis ex cum earum. Eligendi quam iste cum. Impedit unde autem vitae praesentium.
+         <p style="text-align: justify;">Die Forschungsfrage hinter meiner Masterthesis ist, ob sich ein LiDAR-Sensor in einem Neural Radinace Fields (NeRF) synthetisieren lässt. Ein NeRF ist eine KI-Basierte Methode zum erstellen eine 3D Szenen-repräsentation, die aus 2D Input (Bilder) die Szene fotorealistisch in Echzeit darstellen kann, in der sich frei bewegt werden kann. Durch die sehr große Anzahl verschiedener LiDAR-Sensoren, war die Idee, dass von eine Szene Bilder aufgenommen wurde und meine Anwendung verwendet wird um zu entscheiden, welcher Sensor für welche Anlage am besten geeignet ist. Die Herausforderung lag daran, dass das neuronale Netz eine Blackbox ist und die einzelnen Koordinaten und Objekte in der Szene lediglich perspektifisch dargestellt werden. NeRF selbst lernt nur, den RGB-Wert und den Dichtewert an jeder Stelle des Raums zu approximieren. Somit sind Distanzen und Positionen von Objekten in der Szene nicht bekannt. Die verwendung von anderen Methoden zur 3D-Szenenrepräsentation ist meist einem größerene Aufwand verbunden oder einem weniger genaueren Ergebniss. Meine entwickelte Anwendung ist dazu in der Lage, aus jeder beliebigen Perspektive bis weniger als ein mm die Distanz zu jedem Punkt zu messen und dadurch Punktwolken zu erstellen, die mögliche LiDAR-Sensoren repräsentieren können. Auf dem Bilder sind zwei verschiedne NeRF-Szenen (Kein echten Bilder) von eine echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</p>
       </div>
 
 
       <button class="accordion">Praktisches Studiensemester - dreiQbik</button>
       <div class="panel">
-         <p style="text-align: justify;"> Während des Bachelors absolvierte ich mein praktisches Studiensemester bei der Webagentur dreiQbik Karlsruhe. Schwerpunkt war die Fullstack-Entwicklung von indviduellen Webanwendungen für Unternehmen. Der USP war die Verwendung von CMS "WordPress" als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Hierbei wurde WordPress nicht verwendet, um die Anwendung über das CMS wie einen Baukasten zu füllen, sondern WordPress diente als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Der Kunde konnte anschließend mit für ihn entwickelten Custom-Fields die Inhalte selbst befüllen. <br> Während des Praktikums von sechs Monaten wurde ich in allen Prozessen der Entwicklung mit einbezogen und gefordert. Von der Kundenakquise, Kundengespräche, Projektmanagement, Back- und Frontendentwicklung bis zu Deployment der entsprechenden Software.</p>
+         <p style="text-align: justify;"> Während des Bachelors absolvierte ich mein praktisches Studiensemester bei der Webagentur dreiQbik Karlsruhe. Schwerpunkt war die Fullstack-Entwicklung von indviduellen Webanwendungen für Unternehmen. Der USP war die Verwendung von CMS "WordPress" als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Hierbei wurde WordPress nicht verwendet, um die Anwendung über das CMS wie einen Baukasten zu füllen, sondern WordPress diente als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Der Kunde konnte anschließend mit für ihn entwickelten Custom-Fields die Inhalte selbst befüllen.</p>
 
          <video class="mr-2" style="clear:left; float: left" width="720" autoplay controls loop muted>
             <source src="./assets/videos/exp1.mp4">
@@ -95,10 +82,7 @@ require './includes/auth.php';
       <button class="accordion">Bachelorthesis - Implementierung eines Buchungssystems und dessen
          Algorithmus auf Basis einer Immobilienverwaltungsumgebung</button>
       <div class="panel">
-         <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci beatae optio nulla sit incidunt atque dolorum, nemo, vitae aliquam tempore? Ratione sed voluptas modi sequi porro in enim ipsum?
-            Accusantium ipsum expedita rerum maxime quis nisi dignissimos adipisci exercitationem aliquam quo, tenetur provident ratione alias fugiat numquam cupiditate nesciunt molestiae, magnam illum! Quas recusandae exercitationem perferendis? Ullam, eius omnis?
-            Magnam soluta, sequi impedit quae aliquid, voluptates non minus beatae porro eos architecto unde praesentium, eum cupiditate? Ea, consequatur officia possimus totam aspernatur reprehenderit ex dicta, repudiandae provident sint amet!
-            Culpa magnam cupiditate, necessitatibus similique harum ab eius aliquid eos recusandae quaerat quae dolores maxime quam rem reiciendis ex cum earum. Eligendi quam iste cum. Impedit unde autem vitae praesentium.
+         <p style="text-align: justify;">Die Aufgabe der Bachelorthesis bestand darin, einen Algorithmus zu schreiben, der einkommende Buchungen für ein Immobilienverwaltungssytem verwaltet und zuordnet. Die Herausforderung bestand darin Buchungen zuzuordnen, bei der nicht direkt erkennbar ist, zu welchem Vertrag diese gehören, da z.B. die Falsche Summe, Vertragsdaten oder anderen Dinge bei der Überweisung fehlen. Der Algorithmus sollten soweit es geht die Buchungen selbst durchführen und bei nicht eindeutigen Buchungen Vorschläge machen. Außerdem sollte das System aus vergangenen Buchungen lernen.
       </div>
 
    </div>
