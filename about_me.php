@@ -11,6 +11,11 @@ require './includes/db_connect.php';
    <link rel="stylesheet" href="./style.css">
    <script src="./js/download_page.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+   <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+   <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+   <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+   <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 </head>
 
 <body>
@@ -19,7 +24,7 @@ require './includes/db_connect.php';
       <a href="dashboard"><button class="btn btn--main btn--nav">Zurück</button></a>
       <a href="#" pdfName="about_patrick_kaserer" id="downloadPdf"><button class="btn btn--main btn--nav">Download als PDF</button></a>
    </div>
-   
+
    <div class="container_dashboard">
       <h2>Über mich</h2>
       <img src="./assets/img/me_hfu_i_building.jpg" alt="Me in the I-Building at HFU" style="width: 100%; max-width: 500px; float: left; margin-right: 20px;">
@@ -30,7 +35,7 @@ require './includes/db_connect.php';
       <img src="./assets/img/me_game_jam.jpg" alt="Me at work" style="width: 100%; max-width: 500px; float: right; margin-left: 20px;">
       <p style="text-align: justify;">Im Laufe des Studiums und schon davor, habe ich das Interesse für mehrere Bereiche entwickelt. Hierbei gehe ich nicht auf Stellenbezeichnungen wie "Softwareentwickler" oder "Projektmanager" ein. Auch die verschiedenen Programmiersprachen sind hier nicht relevant. Hier geht es um die Bereiche, die mich interessieren und wo ich zukünftig gerne arbeiten würde. </p> <br>
       <h3>Neuronale Netze</h3>
-      <p style="text-align: justify;">Schon bevor ich 2018 mit dem Studium begonnen habe, hatte ich großes Interesse an dem Thema künstliche Intelligenz. Selbst betrachte ich den Begriff KI aber als Kampfwort, da der Begriff zu groß ist um in einem Wort den genauen Bereich darzustellen und nach dem ChatGPT-Hype vor Allem  fürs Marketing verwendet wird. Mein Interesse liegt vor allen bei neuronalen Netzen und Deep Learing. Ich sehe in diesen Bereichen die Zukunft der Entwicklung und stelle es auf eine ähnliche Stufe wie die Entwicklung des Internets. Da mich dieses Thema stark interessiert, informiere ich mich auch privat viel darüber, jedoch ist es gerade als Absolvent schwierig in diesem Bereich Berufserfahrungen zu sammeln, wenn diese nicht schon vorhanden sind. Im Laufe des Studiums habe ich an verschiedenen KI-Projekten gearbeitet. So z.B.: Ein Model welches verschieden Lebensmittel erkennt und die entsprechneden Nährwerte auf einem Augmented Reality-Tisch projiziert, ein XAI (Explainable AI) Model, welches visuell die Komplexität eines neuronalen Netzes aufzeigen und gleichzeitig die Blackbox begreiflicher machen soll, oder die Arbeit in meiner Masterthesis, bei dem das neuronale Netz einem Neural Radiance Fields eine fotorealistische 3D repräsentation eine echten Szene approximiert, in der sich in Echtzeit unabhängig bewegt werden kann. <br> <br></p>
+      <p style="text-align: justify;">Schon bevor ich 2018 mit dem Studium begonnen habe, hatte ich großes Interesse an dem Thema künstliche Intelligenz. Selbst betrachte ich den Begriff KI aber als Kampfwort, da der Begriff zu groß ist um in einem Wort den genauen Bereich darzustellen und nach dem ChatGPT-Hype vor Allem fürs Marketing verwendet wird. Mein Interesse liegt vor allen bei neuronalen Netzen und Deep Learing. Ich sehe in diesen Bereichen die Zukunft der Entwicklung und stelle es auf eine ähnliche Stufe wie die Entwicklung des Internets. Da mich dieses Thema stark interessiert, informiere ich mich auch privat viel darüber, jedoch ist es gerade als Absolvent schwierig in diesem Bereich Berufserfahrungen zu sammeln, wenn diese nicht schon vorhanden sind. Im Laufe des Studiums habe ich an verschiedenen KI-Projekten gearbeitet. So z.B.: Ein Model welches verschieden Lebensmittel erkennt und die entsprechneden Nährwerte auf einem Augmented Reality-Tisch projiziert, ein XAI (Explainable AI) Model, welches visuell die Komplexität eines neuronalen Netzes aufzeigen und gleichzeitig die Blackbox begreiflicher machen soll, oder die Arbeit in meiner Masterthesis, bei dem das neuronale Netz einem Neural Radiance Fields eine fotorealistische 3D repräsentation eine echten Szene approximiert, in der sich in Echtzeit unabhängig bewegt werden kann. <br> <br></p>
 
       <h3>Didaktik</h3>
       <p style="text-align: justify;">Während meines Studiums hatte ich das Glück als studentische Hilfskraft, Erstsemester zu unterrichten und ihnen die Welt der Programmierung beizubringen. Nach meiner Tätigkeit als studentische Hilfskraft wurde mir angeboten, als Lehrbeauftragter die Verantwortung zu übernehmen und die Inhalte so zu gestalten, wie ich sie für richtig empfinde. Inklusive der Prüfungsleistung. Diese Arbeit hat mir sehr viel Spaß gemacht und mich persönlich auch sehr weitergebracht. Ich habe während meiner Lehre verstehen können, was es bedeutet, Inhalte tatsächlich zu verstehen. Wie Menschen denken, wie Menschen geführt werden wollen und wie mit ihnen umgegangen werden muss. Ich habe verstanden, dass ein Thema nur dann verstanden wird, wenn es anderen Personen erklärt werden kann, die keine Erfahrung damit haben. Dies hat mich auch bei meiner Art beeinflusst, wie ich mit anderen Menschen kommuniziere und meine Inhalte präsentiere. Ich sehe die Lehre als besonders spannenden und wichtigen Bereich. Sowohl selbst Inhalte zu lehren als auch an Projekten zu arbeiten, die dafür gedacht sind, Inhalte zu vermitteln, und natürlich auch ein Leben lang selbst zu lernen. </p><br>

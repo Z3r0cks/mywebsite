@@ -55,7 +55,7 @@ CREATE TABLE `user` (
   `email` varchar(255) NOT NULL,
   `passwort` varchar(255) NOT NULL,
   `job_desc` varchar(255) NOT NULL,
-  `initial_appli` tinyint(1) NOT NULL,
+  `initial_apply` tinyint(1) NOT NULL,
   `created_ad` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -63,7 +63,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_name`, `email`, `passwort`, `job_desc`, `initial_appli`, `created_ad`) VALUES
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `passwort`, `job_desc`, `initial_apply`, `created_ad`) VALUES
 (1, 'Admin', '', 'Fag5fj5vLC', 'Softwareentwickler', 0, '2025-01-07 13:27:59'),
 (2, 'Test', '', '123', 'Projektmanager', 0, '2025-01-07 13:27:59');
 

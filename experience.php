@@ -11,13 +11,17 @@ require './includes/auth.php';
    <script src="./js/accordion.js" defer></script>
    <script src="./js/download_page.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+   <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+   <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
+   <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+   <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 </head>
 
 <body>
    <div class="nav">
       <a href="logout.php"><button class="btn btn--main btn--nav">Abmelden</button></a>
       <a href="dashboard"><button class="btn btn--main btn--nav">Zurück </button></a>
-      <a href="#" pdfName="experience_patrick_kaserer" id="downloadPdf"><button class="btn btn--main btn--nav">Download als PDF </button></a>
    </div>
    <div class="container_dashboard">
       <h1>Erfahrungen</h1>
@@ -47,8 +51,8 @@ require './includes/auth.php';
       <button class="accordion">Masterthesis - Synthesized Sensor Data from Neural Radiance Fields</button>
       <div class="panel">
 
-      <img style="clear:right; float: right" class="ml-2 mb-1" width="80%" src="./assets/img/result1.png" alt="">
-      <img style="clear:right; float: right" class="ml-2" width="80%" src="./assets/img/result2.png" alt="">
+         <img style="clear:right; float: right" class="ml-2 mb-1" width="80%" src="./assets/img/result1.png" alt="">
+         <img style="clear:right; float: right" class="ml-2" width="80%" src="./assets/img/result2.png" alt="">
 
          <p style="text-align: justify;">Die Forschungsfrage hinter meiner Masterthesis ist, ob sich ein LiDAR-Sensor in einem Neural Radinace Fields (NeRF) synthetisieren lässt. Ein NeRF ist eine KI-Basierte Methode zum erstellen eine 3D Szenen-repräsentation, die aus 2D Input (Bilder) die Szene fotorealistisch in Echzeit darstellen kann, in der sich frei bewegt werden kann. Durch die sehr große Anzahl verschiedener LiDAR-Sensoren, war die Idee, dass von eine Szene Bilder aufgenommen wurde und meine Anwendung verwendet wird um zu entscheiden, welcher Sensor für welche Anlage am besten geeignet ist. Die Herausforderung lag daran, dass das neuronale Netz eine Blackbox ist und die einzelnen Koordinaten und Objekte in der Szene lediglich perspektifisch dargestellt werden. NeRF selbst lernt nur, den RGB-Wert und den Dichtewert an jeder Stelle des Raums zu approximieren. Somit sind Distanzen und Positionen von Objekten in der Szene nicht bekannt. Die verwendung von anderen Methoden zur 3D-Szenenrepräsentation ist meist einem größerene Aufwand verbunden oder einem weniger genaueren Ergebniss. Meine entwickelte Anwendung ist dazu in der Lage, aus jeder beliebigen Perspektive bis weniger als ein mm die Distanz zu jedem Punkt zu messen und dadurch Punktwolken zu erstellen, die mögliche LiDAR-Sensoren repräsentieren können. Auf dem Bilder sind zwei verschiedne NeRF-Szenen (Kein echten Bilder) von eine echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</p>
       </div>
