@@ -3,6 +3,18 @@
 require './includes/auth.php';
 require './includes/db_connect.php';
 
+function randomHash()
+{
+   $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+   $pass = array(); //remember to declare $pass as an array
+   $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+   for ($i = 0; $i < 20; $i++) {
+      $n = rand(0, $alphaLength);
+      $pass[] = $alphabet[$n];
+   }
+   return implode($pass); //turn the array into a string
+}
+
 // CSRF-Schutz vorbereiten
 if (!isset($_SESSION['csrf_token'])) {
    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -20,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $company_email = filter_var($_POST['company_email'], FILTER_SANITIZE_EMAIL);
    $company_password = $_POST['company_password']; // Wird später gehasht
    $company_job_desc = htmlspecialchars(trim($_POST['company_job_desc']));
-   $company_initial_apply = $_POST['company_initial_apply'];
+   $company_initial_apply = 1 ? isset($_POST['company_initial_apply']) : 0;
 
    // Validierung der Eingaben
    if (empty($company_name) || empty($company_email) || empty($company_password)) {
@@ -33,32 +45,78 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    // Passwort-Hashing
    $hashed_password = password_hash($company_password, PASSWORD_DEFAULT);
+   $file_hash = randomHash();
 
    try {
-      // SQL-Abfrage vorbereiten
+
+      // add user
       $sql = "
-           INSERT INTO user (user_name, email, passwort, job_desc, initial_apply)
-           VALUES (:company_name, :company_email, :company_password, :company_job_desc, :company_initial_apply)
+           INSERT INTO user (user_name, email, passwort, job_desc, initial_apply, role, file_hash)
+           VALUES (:company_name, :company_email, :company_password, :company_job_desc, :company_initial_apply, 'user', :file_hash)
        ";
       $stmt = $pdo->prepare($sql);
 
-      // Parameter binden
       $stmt->bindParam(':company_name', $company_name, PDO::PARAM_STR);
       $stmt->bindParam(':company_email', $company_email, PDO::PARAM_STR);
       $stmt->bindParam(':company_password', $hashed_password, PDO::PARAM_STR);
       $stmt->bindParam(':company_job_desc', $company_job_desc, PDO::PARAM_STR);
       $stmt->bindParam(':company_initial_apply', $company_initial_apply, PDO::PARAM_STR);
-
-      // Query ausführen
+      $stmt->bindParam(':file_hash', $file_hash, PDO::PARAM_STR);
       $stmt->execute();
 
-      // Erfolgsmeldung und Weiterleitung
-      header('Location: dashboard.php?success=1');
-      exit();
+      // add document
+      $file_name = $_FILES["file"]["name"];
+      $file_size = round($_FILES["file"]["size"] / 1024);
+      $target_dir = "downloads/protected/motivation/";
+      $target_file = $target_dir . basename($file_name);
+      $target_url = "/" . $target_dir . basename($file_name);
+
+      try {
+         $sql = "
+            INSERT INTO documents (file_name, file_desc, file_url, file_size, file_hash, common_file)
+            VALUES (:file_name, 'Motivationsschreiben für die Bewerbung', :target_url, :file_size, :file_hash, 0)
+         ";
+
+         $stmt = $pdo->prepare($sql);
+         $stmt->bindParam(':file_name', $file_name, PDO::PARAM_STR);
+         $stmt->bindParam(':target_url', $target_url, PDO::PARAM_STR);
+         $stmt->bindParam(':file_size', $file_size, PDO::PARAM_INT);
+         $stmt->bindParam(':file_hash', $file_hash, PDO::PARAM_STR);
+         $stmt->execute();
+         move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
+      } catch (PDOException $e) {
+         die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
+      }
+
+      // add user_documents
+      $user_id_query = $pdo->prepare("SELECT user_id FROM user WHERE user_name = :company_name");
+      $user_id_query->execute([':company_name' => $company_name]);
+      $user_id = $user_id_query->fetchColumn();
+
+      $file_ids_query = $pdo->prepare("SELECT file_id FROM documents WHERE common_file = 1 OR file_hash = :file_hash");
+      $file_ids_query->execute([':file_hash' => $file_hash]);
+      $file_ids = $file_ids_query->fetchAll(PDO::FETCH_COLUMN); //
+
+      $insert_stmt = $pdo->prepare("INSERT INTO user_documents (user_id, document_id) VALUES (:user_id, :document_id)");
+      foreach ($file_ids as $document_id) {
+         $insert_stmt->execute([
+            ':user_id' => $user_id,
+            ':document_id' => $document_id,
+         ]);
+      }
    } catch (PDOException $e) {
       die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
    }
 }
+
+try {
+   $stmt = $pdo->prepare("SELECT user_name, user_id FROM user");
+   $stmt->execute();
+   $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+   die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    <div class="container_dashboard">
       <h1>Unternehmen Hinzufügen</h1>
       <!-- Formular anzeigen -->
-      <form action="add_comp" method="post">
+      <form action="add_comp" method="post" enctype="multipart/form-data">
          <!-- CSRF-Token als verstecktes Feld -->
          <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
 
@@ -106,6 +164,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
          <label for="company_initial_apply">Initial Apply:</label>
          <input type="checkbox" id="company_initial_apply" name="company_initial_apply">
+         <br>
+
+         <label for="file">Motivationsschreiben:</label>
+         <input id="file" name="file" type="file" />
          <br>
 
          <button type="submit">Hinzufügen</button>
