@@ -81,13 +81,8 @@ require './includes/auth.php';
          </video>
          <p style="text-align: justify;">Im Projekt war ich für die Entwicklung der Anwendung und mit einem weiteren Komilitonen für das Projektmanagement mit Scrum verantwortlich. Auch wenn das Projekt durch einen Professor unterstützt wurde, oblag die Verantwortung für die Idee, das Konzept, Marketing, Entwicklung und Deployment den Studierenden. Durch die Coronapandemie wurde das Projekt nur für einen Tag released um diesen Prozess aufzuzeigen. Das Promotionvideo für die Webanwendung ist im Video zu sehen.</p>
       </div>
-
-
-      <button class="accordion">Bachelorthesis - Implementierung eines Buchungssystems und dessen
-         Algorithmus auf Basis einer Immobilienverwaltungsumgebung</button>
-      <div class="panel">
- 
    </div>
 </body>
 
 </html>
+

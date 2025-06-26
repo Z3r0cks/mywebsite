@@ -3,12 +3,12 @@
 require './includes/auth.php';
 require './includes/db_connect.php';
 
-function randomHash()
+function randomHash($lengt)
 {
    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
    $pass = array(); //remember to declare $pass as an array
    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-   for ($i = 0; $i < 20; $i++) {
+   for ($i = 0; $i < $lengt; $i++) {
       $n = rand(0, $alphaLength);
       $pass[] = $alphabet[$n];
    }
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    // Passwort-Hashing
    $hashed_password = password_hash($company_password, PASSWORD_DEFAULT);
-   $file_hash = randomHash();
+   $file_hash = randomHash(20);
 
    try {
 
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          $stmt->execute();
          move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
       } catch (PDOException $e) {
-         die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
+         die("Fehler beim Hinzufügen des Users: " . $e->getMessage());
       }
 
       // add user_documents
@@ -95,6 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       $file_ids_query = $pdo->prepare("SELECT file_id FROM documents WHERE common_file = 1 OR file_hash = :file_hash");
       $file_ids_query->execute([':file_hash' => $file_hash]);
+
       $file_ids = $file_ids_query->fetchAll(PDO::FETCH_COLUMN); //
 
       $insert_stmt = $pdo->prepare("INSERT INTO user_documents (user_id, document_id) VALUES (:user_id, :document_id)");
@@ -105,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          ]);
       }
    } catch (PDOException $e) {
-      die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
+      die("Fehler beim Hinzufügen des User-Dokuments: " . $e->getMessage());
    }
 }
 
@@ -114,7 +115,7 @@ try {
    $stmt->execute();
    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-   die("Fehler bei der Datenbankabfrage: " . $e->getMessage());
+   die("Fehler beim Hinzufügen des Dokuments: " . $e->getMessage());
 }
 
 ?>
@@ -153,9 +154,9 @@ try {
          <label for="company_email">E-Mail:</label>
          <input type="email" id="company_email" name="company_email" required>
          <br>
-
+         <?php $pw = randomHash(8) ?>
          <label for="company_password">Passwort:</label>
-         <input type="password" id="company_password" name="company_password" required>
+         <input value="<?= htmlspecialchars($pw) ?>" type="text" id="company_password" name="company_password" required>
          <br>
 
          <label for="company_job_desc">Job-Beschreibung:</label>
