@@ -62,10 +62,11 @@ CREATE TABLE `user` (
 --
 -- Dumping data for table `user`
 --
+-- Passwords removed for security. Use PHP's password_hash() for real credentials.
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `passwort`, `job_desc`, `initial_apply`, `created_ad`) VALUES
-(1, 'Admin', '', 'Fag5fj5vLC', 'Softwareentwickler', 0, '2025-01-07 13:27:59'),
-(2, 'Test', '', '123', 'Projektmanager', 0, '2025-01-07 13:27:59');
+(1, 'Admin', '', 'REDACTED', 'Softwareentwickler', 0, '2025-01-07 13:27:59'),
+(2, 'Test', '', 'REDACTED', 'Projektmanager', 0, '2025-01-07 13:27:59');
 
 -- --------------------------------------------------------
 
