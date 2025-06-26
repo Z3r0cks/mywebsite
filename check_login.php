@@ -11,6 +11,10 @@ session_start();
 
 // Eingaben prüfen und bereinigen
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!isset($_POST["csrf_token"]) || !isset($_SESSION["csrf_token"]) || !hash_equals($_SESSION["csrf_token"], $_POST["csrf_token"])) {
+        header("Location: error.php?error=invalid_token");
+        exit();
+    }
     // Benutzername und Passwort aus POST abrufen und validieren
     $user_name = trim($_POST['user_name']);
     $password = $_POST['password'];
