@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $company_email = filter_var($_POST['company_email'], FILTER_SANITIZE_EMAIL);
    $company_password = $_POST['company_password']; // Wird später gehasht
    $company_job_desc = htmlspecialchars(trim($_POST['company_job_desc']));
-   $company_initial_apply = 1 ? isset($_POST['company_initial_apply']) : 0;
+   $company_initial_apply = isset($_POST["company_initial_apply"]) ? 1 : 0;
 
    // Validierung der Eingaben
    if (empty($company_name) || empty($company_email) || empty($company_password)) {
