@@ -77,15 +77,17 @@ if (empty($_SESSION['csrf_token'])) {
                 </div>
                 <div class="banner">Page Is Work In Progess! </div>
             </div>
-            <form class="mb-2 display-flex flex-column login" action="check_login.php" method="POST">
+            <form class="display-flex flex-column login" action="check_login.php" method="POST">
                 <div class="display-flex flex-justify-between">
                     <div class="mr-10-px login--input"><label for="user_name">Benutzername</label><input type="text" placeholder="Login Name" id="user_name" name="user_name" required></div>
                     <div class="ml-10-px login--input"><label for="password">Passwort</label><input class="" type="password" placeholder="Passwort" id="password" name="password" required><input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>"></div>
                 </div><button class="button_form" type="submit">Anmelden</button>
             </form>
-            <div class="guest-login-section mb-2">
-                <p class="text-center mb-1">oder</p>
-                <a href="guest_login.php" class="button_form button_form--guest">Als Gast anschauen</a>
+            <div class="guest-login-section">
+                <p class="text-center">oder</p>
+                <form class="mb-2 display-flex flex-column login" action="guest_login.php" method="POST">
+                    <button class="button_form" type="submit">Als Gast anmelden</button>
+                </form>
             </div>
             <div class="link_logo--wrapper">
                 <a href=https://www.linkedin.com/in/patrick-kaserer>

@@ -1,12 +1,12 @@
 $c1-main: #272727;
-$c2-main: #353333;
+$c2-main: #464646;
 $c3-main: #686868;
 $c4-main: #969595;
 
 $c1-second: #0f7dbd;
 $c2-second: #2e6c48;
 $c3-second: #effcef;
-$c4-second: #ff5454;
+$c4-second: #8f2626;
 
 $card-green: #326932;
 $card-red: #93312d;
@@ -35,9 +35,12 @@ $vertical-gradient: linear-gradient(270deg, #2e6c48 0%, #50b375 100%);
 $transition: 0.3s;
 $box-shadow: #01010159;
 
+
+$border-radius_small: 5px;
+$border-radius_image: 15px;
 $border-radius-cards: 35px;
 $border-radius: 45px;
-$border-radius_image: 15px;
+$border-radius-round: 50%;
 
 /* --------------------------------------------------
 Fonts

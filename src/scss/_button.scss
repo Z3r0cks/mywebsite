@@ -62,28 +62,3 @@
       }
    }
 }
-
-.guest-login-section {
-   text-align: center;
-   margin-top: 1rem;
-}
-
-.guest-login-section p {
-   color: #6c757d;
-   font-size: 14px;
-   margin: 0.5rem 0;
-}
-
-.button_form--guest {
-   background-color: #6c757d;
-   color: white;
-   text-decoration: none;
-   display: inline-block;
-   text-align: center;
-   transition: all 0.3s ease;
-}
-
-.button_form--guest:hover {
-   background-color: #5a6268;
-   transform: translateY(-1px);
-}

@@ -8,12 +8,12 @@ input[type="date"],
 input[type="time"],
 input[type="file"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  display: inline-block;
-  box-sizing: border-box;
-  transition: 0.3s;
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0;
+   display: inline-block;
+   box-sizing: border-box;
+   transition: 0.3s;
 }
 
 .button_form,
@@ -34,18 +34,32 @@ input[type="password"]:focus {
 
 .button_form {
    cursor: pointer;
-  width: 100%;
-  background-color: $c1-main;
-  color: $c-white;
-  border: solid 1px $c-white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  transition: 0.3s;
-}
-
-.button_form:focus,
-.button_form:hover {
-   transform: scale(1.02);
+   width: 100%;
+   background-color: $c1-main;
+   color: $c-white;
+   border: solid 1px $c-white;
+   padding: 14px 20px;
+   margin: 8px 0;
    transition: 0.3s;
-   box-shadow: 0 0 10px $c1-main;
+
+   &--guest {
+      // background-color: red;
+      color: white;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+         // background-color: #5a6268;
+         transform: scale(1.02);
+      }
+   }
+
+   &:focus,
+   &:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+      box-shadow: 0 0 10px $c1-main;
+   }
 }

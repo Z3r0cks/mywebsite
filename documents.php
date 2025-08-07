@@ -5,6 +5,11 @@ require './includes/db_connect.php';
 
 $user_name = $_SESSION['user_name'];
 
+if (isset($_SESSION['is_guest']) && $_SESSION['is_guest'] === true) {
+    header('Location: dashboard');
+    exit;
+}
+
 try {
     $sql = "
         SELECT d.file_id, d.file_name, d.file_desc, d.file_url, d.file_hash, d.file_size

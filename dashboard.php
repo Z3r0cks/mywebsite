@@ -49,7 +49,7 @@ try {
     </div>
     <div class="container_dashboard">
         <h1><?php if ($is_guest) { ?>
-                <span data-translate="dashboard.welcome_guest">Willkommen als Gast</span>
+                <span data-translate="dashboard.welcome_guest">Willkommen Gast</span>
             <?php } else { ?>
                 <span data-translate="dashboard.welcome">Willkommen im Dashboard</span>, <?= htmlspecialchars($username) ?>
             <?php } ?></h1>
@@ -102,9 +102,13 @@ try {
                     <span class="about-me-dashboard-text">Über Mich</span>
                 </div>
             </a>
-<?php if (!$is_guest) { ?>
-            <a class="boxWrapper__a" href="documents">
-                <div class="documents-dashboard-icon">
+            <?php if (!$is_guest) { ?>
+                <a class="boxWrapper__a" href="documents">
+                <div class="documents-dashboard-icon ">
+            <?php } else {?>
+                <a class="boxWrapper__a boxWrapper__a--disabled">
+                <div class="documents-dashboard-icon documents-dashboard-icon--disabled">
+            <?php } ?>
                     <svg width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <!-- Main document -->
                         <rect x="25" y="15" width="40" height="55" rx="3" fill="#0f7dbd" opacity="0.8"/>
@@ -132,10 +136,9 @@ try {
                         <line x1="21" y1="28" x2="28" y2="32" stroke="#e9ecef" stroke-width="1" opacity="0.4"/>
                         <line x1="79" y1="38" x2="72" y2="42" stroke="#e9ecef" stroke-width="1" opacity="0.4"/>
                     </svg>
-                    <span class="documents-dashboard-text">Dokumente</span>
+                    <span class="documents-dashboard-text documents-dashboard-text--disabled">Dokumente</span>
                 </div>
             </a>
-<?php } ?>
         </div>
         <div class="boxWrapper__inner">
             <a class="boxWrapper__a" href="experience">
@@ -229,10 +232,15 @@ try {
                 </div>
             </a>
         </div>
-<?php if (!$is_guest) { ?>
         <div class="boxWrapper__inner">
-            <a class="boxWrapper__a" href="timeline">
-                <div class="timeline-dashboard-icon">
+        <?php if (!$is_guest) { ?>
+                <a class="boxWrapper__a" href="timeline">
+                    <div class="timeline-dashboard-icon">
+            <?php } else {?>
+                <a class="boxWrapper__a boxWrapper__a--disabled">
+                    <div class="timeline-dashboard-icon timeline-dashboard-icon--disabled">
+            <?php } ?>
+                <!-- <div class="timeline-dashboard-icon timeline-dashboard-icon--disabled"> -->
                     <svg width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="10" cy="20" r="3" fill="#0f7dbd"/>
                         <circle cx="10" cy="40" r="3" fill="#2e6c48"/>
@@ -248,7 +256,6 @@ try {
                 </div>
             </a>
         </div>
-<?php } ?>
         <?php
 
         $sql = "SELECT role FROM user WHERE user_name = :user_name";

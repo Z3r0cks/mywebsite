@@ -1,6 +1,11 @@
 <?php
 require './includes/auth.php';
 require './includes/db_connect.php';
+
+if (isset($_SESSION['is_guest']) && $_SESSION['is_guest'] === true) {
+    header('Location: dashboard');
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html>

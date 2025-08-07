@@ -1,5 +1,20 @@
 RewriteEngine On
 
+# Custom Error Pages
+ErrorDocument 404 /404.php
+ErrorDocument 500 /error.php?type=500
+ErrorDocument 403 /error.php?type=403
+ErrorDocument 400 /error.php?type=400
+
+# URL Rewriting for PHP files
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ $1.php [L]
+
+# Security Headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# Hide PHP version
+Header unset X-Powered-By

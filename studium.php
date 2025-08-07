@@ -25,13 +25,135 @@ require './includes/auth.php';
       <a href="#" pdfName="experience_patrick_kaserer" id="downloadPdf"><button class="btn btn--main btn--nav">Download als PDF </button></a>
    </div>
    <div class="container_dashboard">
-      <h1>Medieninformatik</h1>
-      <div class="container_dashboard">
-         <img src="./assets/img/mi.png" width="100%" alt="illustrated image of computer science" class="mi__img--first">
-         <p class="mb-2" style="text-align: justify;">Medieninformatik ist ein interdisziplinärer Informatikstudiengang, welcher es erlaubt, in vielen Bereichen einen Einblick zu bekommen und sich anschließend auf Gebiete zu vertiefen, für die Interesse besteht.<br> Die Schwerpunkte der Studiengänge (Bachelor und Master) lagen in den Bereichen Informatik, Medien und Wirtschaft.</p>
-         <img src="./assets/img/mi2.png" style="margin-bottom: 2rem;" width="75%" alt="illustrated image of computer science" class="mi__img--second">
-         <p style="text-align: justify;">Viele Arbeitsbereiche wurden in den letzten Jahrzehnten in Spezialisierungen unterteilt. Das beste Beispiel wäre der Beruf des Arztes, bei dem der Wissensstand so groß ist, dass eine Person nicht in allen Bereichen ein Spezialist sein kann. Auch wenn dies ein extremes Beispiel darstellt, denn als Medieninformatiker kann ich sehr wohl alle Bereiche der anderen Spezialisierungen lernen, ist dies der Grund für die Spezialisierung zum Medieninformatiker. <br>
-         Der Unterschied zum allgemeinen Informatiker sind die Vertiefungen der Studiengänge. Während bei der allgemeinen Informatik eine Vertiefung in den Kernelementen der Informationsverarbeitung liegt, liegen die Vertiefungen bei Medieninformatik beim Erstellen von Anwendungen, dem Verstehen von Computergrafik, dem Verhalten künstlicher Intelligenz und wie diese die Welt betrachtet erfassen und verstehen kann, als auch bei den Nebenbereichen, den Markt und das Produkt zu verstehen, zu führen und zu organisieren. Da mein Interesse nicht darin liegt, z. B. mit Assembly nahe der Maschinensprache neue Programmiersprachen zu entwickeln, sondern ich anwendungsorientiert und wissenschaftlich entwickeln möchte, war die Wahl Medieninformatik passender für mich, zumal die Nebenbereiche für mich ebenfalls relevant waren. Bedeutet jedoch nicht, dass jemand, der allgemeine Informatik studiert hat, nicht ebenfalls die Inhalte des Medieninformatikers lernen kann oder umgekehrt. So habe ich selbst auch schon nahe der Maschinensprache programmieren dürfen. Ich bezeichne mich durch und durch als Informatiker. Ich betrachte meine Aufgabenbereiche nicht nur beim Erstellen von Software, auch wenn mir Programmieren sehr viel Spaß macht, sondern auch, um die Prozesse dahinter zu verstehen. Nicht nur beim Projektmanagement, sondern auch bei den wirtschaftlichen, wissenschaftlichen und soziologischen Aspekten dahinter.</p>
+      <!-- Hero Section -->
+      <div class="studium-hero">
+         <div class="hero-content">
+            <h1 class="c2-main">Medieninformatik B.Sc. & M.Sc.</h1>
+            <h2 class="c1-second">Interdisziplinäre Informatik mit Fokus auf Anwendung</h2>
+            <p class="hero-description">
+               <strong>Ich bin durch und durch Informatiker.</strong> Medieninformatik ist ein interdisziplinärer Informatikstudiengang, 
+               der es erlaubt, in vielen Bereichen Einblicke zu bekommen und sich auf die Gebiete zu vertiefen, für die Interesse besteht.
+            </p>
+         </div>
+         
+         <!-- Key Message -->
+         <div class="key-message">
+            <div class="message-card bg-main1">
+               <h3>💻 Vollwertiger Informatiker</h3>
+               <p>Ich betrachte meine Aufgabenbereiche nicht nur beim Erstellen von Software, sondern verstehe auch die Prozesse dahinter - 
+               von der Programmierung bis hin zu wirtschaftlichen und wissenschaftlichen Aspekten.</p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Study Areas Visualization -->
+      <div class="study-areas">
+         <h2 class="section-title">Mein Studium in drei Hauptbereichen</h2>
+         <div class="areas-grid">
+            <div class="area-card informatik-card">
+               <div class="area-header">
+                  <h3>💙 Informatik</h3>
+                  <span class="area-percentage">~65%</span>
+               </div>
+               <div class="area-content">
+                  <ul class="skills-list">
+                     <li>Mathematik & Algorithmen</li>
+                     <li>Programmierung & Software-Entwicklung</li>
+                     <li>Datenbanken & Verteilte Systeme</li>
+                     <li>Kryptographie & Formale Sprache</li>
+                     <li>Softwaretechnik & Softwaredesign</li>
+                     <li>Kommunikationstechnik</li>
+                     <li>Internet of Things & Webentwicklung</li>
+                     <li>Programmierparadigmen</li>
+                     <li><strong>Künstliche Intelligenz</strong></li>
+                  </ul>
+               </div>
+            </div>
+            
+            <div class="area-card medien-card">
+               <div class="area-header">
+                  <h3>🧡 Medien</h3>
+                  <span class="area-percentage">~25%</span>
+               </div>
+               <div class="area-content">
+                  <ul class="skills-list">
+                     <li>Psychologie & User Experience</li>
+                     <li>Recht & Computergrafik</li>
+                     <li>Computer Vision</li>
+                     <li>Medienwirtschaft</li>
+                     <li>Interaktionsdesign</li>
+                     <li>VR/AR Technologien</li>
+                     <li>Gameentwicklung</li>
+                     <li>Design & Medienproduktion</li>
+                  </ul>
+               </div>
+            </div>
+            
+            <div class="area-card wirtschaft-card">
+               <div class="area-header">
+                  <h3>💚 Wirtschaft</h3>
+                  <span class="area-percentage">~10%</span>
+               </div>
+               <div class="area-content">
+                  <ul class="skills-list">
+                     <li>Ökonomie & Management</li>
+                     <li>Produktmanagement</li>
+                     <li>BWL & Unternehmensgründung</li>
+                     <li>Marketing & Vertrieb</li>
+                     <li>Projektmanagement</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Detailed Explanation -->
+      <div class="studium-details">
+         <h2 class="details-title">Warum Medieninformatik?</h2>
+         
+         <div class="explanation-cards">
+            <div class="explanation-card">
+               <div class="card-icon">🎯</div>
+               <h3>Anwendungsorientiert</h3>
+               <p>Während die allgemeine Informatik oft in Kernelementen der Informationsverarbeitung vertieft, 
+               fokussiert sich Medieninformatik auf das <strong>Erstellen von Anwendungen</strong>, Computergrafik, 
+               KI-Anwendungen und deren praktische Umsetzung.</p>
+            </div>
+            
+            <div class="explanation-card">
+               <div class="card-icon">🔬</div>
+               <h3>Wissenschaftlich fundiert</h3>
+               <p>Ich entwickle nicht nur anwendungsorientiert, sondern auch <strong>wissenschaftlich</strong>. 
+               Die Verbindung von Theorie und Praxis ermöglicht innovative Lösungsansätze.</p>
+            </div>
+            
+            <div class="explanation-card">
+               <div class="card-icon">🌐</div>
+               <h3>Interdisziplinär</h3>
+               <p>Die Nebenbereiche Medien und Wirtschaft waren für mich ebenfalls relevant. Sie helfen dabei, 
+               <strong>das große Ganze zu verstehen</strong> - vom Markt bis zum Endprodukt.</p>
+            </div>
+         </div>
+         
+         <!-- Core Competency Statement -->
+         <div class="core-statement">
+            <div class="statement-content">
+               <h3 class="c1-second">Meine Kernkompetenz</h3>
+               <blockquote>
+                  "Viele Arbeitsbereiche wurden in Spezialisierungen unterteilt - wie beim Arzt. Als Medieninformatiker 
+                  kann ich jedoch alle Bereiche der anderen Informatik-Spezialisierungen lernen. Ich habe sogar schon 
+                  nahe der Maschinensprache mit Assembly programmiert. <strong>Ich bin und bleibe Informatiker</strong> - 
+                  mit dem Vorteil, auch die Prozesse, das Projektmanagement und die wirtschaftlichen sowie 
+                  wissenschaftlichen Aspekte dahinter zu verstehen."
+               </blockquote>
+            </div>
+         </div>
+      </div>
+
+      <!-- Visual Elements -->
+      <div class="studium-visuals">
+         <img src="./assets/img/mi.png" alt="Medieninformatik Illustration" class="mi-illustration">
+         <img src="./assets/img/mi2.png" alt="Computer Science Illustration" class="cs-illustration">
       </div>
    </div>
 </body>

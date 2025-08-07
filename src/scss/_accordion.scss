@@ -1,16 +1,108 @@
+
+// Enhanced Accordion Styles
 .accordion {
   cursor: pointer;
-  background-color: $c1-main;
+  background-color: $c2-main;
   color: $c-white;
-  padding: 10px;
+  padding: 1.5rem;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
-  transition: 0.3s;
-  border: solid 2px $c-white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: $border-radius_small;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 15px rgba($c-black, 0.1);
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  .accordion-title {
+    flex: 1;
+  }
+  
+  &::after {
+    content: '▼';
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  &.active::after {
+    transform: rotate(180deg);
+  }
+  
+  &:hover,
+  &.active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba($c-black, 0.15);
+  }
+}
+
+.panel {
+  padding: 0;
+  margin-bottom: 2rem;
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 $border-radius-cards $border-radius-cards;
+  box-shadow: 0 4px 15px rgba($c-black, 0.05);
+  
+  .panel-content {
+    padding: 2rem;
+    background: linear-gradient(135deg, $c-beige 0%, $c-white 100%);
+    
+    p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: $c2-main;
+      font-size: 1.05rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    strong {
+      color: $c1-main;
+    }
+    
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+      
+      li {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        color: $c2-main;
+        
+        strong {
+          color: $c1-second;
+        }
+      }
+    }
+  }
+  
+  .panel-image-right {
+    float: right;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 1rem 2rem;
+    border-radius: $border-radius_image;
+    box-shadow: 0 4px 15px rgba($c-black, 0.1);
+    
+    @media (max-width: 768px) {
+      float: none;
+      margin: 0 0 1rem 0;
+      max-width: 100%;
+    }
+  }
 }
 
 .active,
@@ -18,11 +110,4 @@
   transition: 0.3s;
   background-color: $c-white;
   color: $c1-main;
-}
-
-.panel {
-  padding: 0 5px;
-  margin-bottom: 1rem;
-  display: none;
-  overflow: hidden;
 }

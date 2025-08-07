@@ -16,7 +16,11 @@ Dashboard Icons - Timeline & About Me
     border: 1px solid rgba(15, 125, 189, 0.1);
   }
   
-  .timeline-dashboard-icon:hover, .about-me-dashboard-icon:hover, .documents-dashboard-icon:hover, .medieninformatik-dashboard-icon:hover, .experience-dashboard-icon:hover {
+  .timeline-dashboard-icon:hover:not(.timeline-dashboard-icon--disabled), 
+  .about-me-dashboard-icon:hover:not(.about-me-dashboard-icon--disabled), 
+  .documents-dashboard-icon:hover:not(.documents-dashboard-icon--disabled), 
+  .medieninformatik-dashboard-icon:hover:not(.medieninformatik-dashboard-icon--disabled), 
+  .experience-dashboard-icon:hover:not(.experience-dashboard-icon--disabled) {
     // background: linear-gradient(135deg, $c1-second, $c2-second);
     /* box-shadow: 0 4px 15px rgba(15, 125, 189, 0.082); */
     border: $c1-second, solid 1px;
@@ -27,7 +31,11 @@ Dashboard Icons - Timeline & About Me
     transition: transform 0.3s ease;
   }
   
-  .timeline-dashboard-icon:hover svg, .about-me-dashboard-icon:hover svg, .documents-dashboard-icon:hover svg, .medieninformatik-dashboard-icon:hover svg, .experience-dashboard-icon:hover svg{
+  .timeline-dashboard-icon:hover:not(.timeline-dashboard-icon--disabled) svg, 
+  .about-me-dashboard-icon:hover:not(.about-me-dashboard-icon--disabled) svg, 
+  .documents-dashboard-icon:hover:not(.documents-dashboard-icon--disabled) svg, 
+  .medieninformatik-dashboard-icon:hover:not(.medieninformatik-dashboard-icon--disabled) svg, 
+  .experience-dashboard-icon:hover:not(.experience-dashboard-icon--disabled) svg{
     transform: scale(1.07) translateY(-3px);
   }
   
@@ -45,10 +53,15 @@ Dashboard Icons - Timeline & About Me
     top: 92% !important;
   }
   
-  .about-me-dashboard-icon:hover .about-me-dashboard-text,
-  .documents-dashboard-icon:hover .documents-dashboard-text,
-  .medieninformatik-dashboard-icon:hover .medieninformatik-dashboard-text,
-  .experience-dashboard-icon:hover .experience-dashboard-text,
-  .about-me-dashboard-icon:hover .about-me-dashboard-text {
+  .about-me-dashboard-icon:hover:not(.about-me-dashboard-icon--disabled) .about-me-dashboard-text,
+  .documents-dashboard-icon:hover:not(.documents-dashboard-icon--disabled) .documents-dashboard-text,
+  .medieninformatik-dashboard-icon:hover:not(.medieninformatik-dashboard-icon--disabled) .medieninformatik-dashboard-text,
+  .experience-dashboard-icon:hover:not(.experience-dashboard-icon--disabled) .experience-dashboard-text {
     color: $c1-second;
+  }
+
+  .documents-dashboard-icon--disabled, .timeline-dashboard-icon--disabled {
+    opacity: 0.5;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
   }

@@ -10,6 +10,7 @@ require './includes/db_connect.php';
    <title>Dashboard - About Me</title>
    <link rel="stylesheet" href="./style.css">
    <script src="./js/download_page.js" defer></script>
+   <script src="./js/accordion.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
@@ -26,25 +27,180 @@ require './includes/db_connect.php';
    </div>
 
    <div class="container_dashboard">
-      <h2>Über mich</h2>
-      <img src="./assets/img/me_hfu_i_building.jpg" alt="Me in the I-Building at HFU" style="width: 100%; max-width: 500px; float: left; margin-right: 20px;">
-      <p class="mb-3"><b>Kurzfassung:</b> <br> <br>Ich bin kein klassischer Absolvent mit geradlinigem Lebenslauf, sondern jemand, der sich bewusst neu orientiert hat. Nach einer Ausbildung und mehreren Jahren Berufserfahrung habe ich mich dazu entschieden, ein Studium in Medieninformatik zu beginnen – mit dem Ziel, mein Interesse an Technologie, KI und Lehre beruflich umzusetzen. Meine Interessen sind: <strong>Neuronale Netze & Deep Learning</strong>,  <strong>Didaktik & Lehre</strong>,  <strong>Angewandte Wissenschaft & Technologie</strong>,  <strong>Organisation & Führung</strong>.</p>
-      <p style="text-align: justify;"><b>Ausführliche Fassung:</b> <br> <br> Hey, ich bin Patrick.<br> <br> Da ich erst mit 28 Jahren angefangen habe zu studieren, bin ich ein älterer Absolvent als die meisten Studierenden. Der Vorteil ist, dass ich ganz genau weiß, wo ich im Leben stehe. Erfahrungen sammeln durfte und auch weiß, wie die Arbeitswelt aussieht und funktioniert. <br> Nachdem ich meinen Hauptschulabschluss und anschließend meine 3-jährige Berufsausbildung zur Fachkraft für Lagerlogistik abgeschlossen hatte, habe ich mehrere Jahre in der Logistik und in anderen Bereichen gearbeitet und Berufserfahrung sammeln dürfen. Die Gründe, weshalb mein erster Schulabschluss ein Hauptschulabschluss war, sind vielschichtig und zu komplex, um dies auf diese Weise zu kommunizieren. Bei einem persönlichen Kennenlernen gehe ich aber gern auf diese Frage ein, da sie ausschlaggebend für meine berufliche Zukunft ist. <br> <br> Ich habe gemerkt, dass diese Arbeit nicht das ist, was ich mir für meine Zukunft wünsche, und ich sie auch nicht mehr weitermachen möchte. Was dazu führte, dass ich in eine Arbeitslosigkeit gerutscht bin, die ich heute als berufliche Neuorientierung bezeichne. <br> <br> Durch meine Berufsausbildung und meinen Hauptschulabschluss konnte ich anschließend das Fachabitur nachholen und bei der Hochschule Furtwangen meinen B.Sc. in Medieninformatik erfolgreich abschließen. Aktuell absolviere ich den Master im gleichen Studiengang, den ich voraussichtlich im Januar oder Februar erfolgreich abschließen werde. Die Arbeit während des Studiums, z. B. im Praktikum, als Lehrbeauftragter oder auch bei studentischen Projekten, macht mir sehr viel Spaß. Hierdurch habe ich gelernt, dass ich die richtige Entscheidung getroffen habe.<br> <br> </p>
+      <!-- Hero Section -->
+      <div class="about-hero">
+         <div class="hero-content">
+            <div class="hero-image">
+               <img src="./assets/img/me_hfu_i_building.jpg" alt="Patrick Kaserer im I-Gebäude der HFU" class="profile-image">
+            </div>
+            <div class="hero-text">
+               <h1 class="c2-main">Patrick Kaserer</h1>
+               <h2 class="c1-second">Medieninformatik M.Sc.</h2>
+               <p class="hero-description">
+                  Ich bin kein klassischer Absolvent mit geradlinigem Lebenslauf, sondern jemand, der sich bewusst neu orientiert hat. 
+                  Nach einer Ausbildung und mehreren Jahren Berufserfahrung habe ich mich dazu entschieden, ein Studium in Medieninformatik zu beginnen – 
+                  mit dem Ziel, mein Interesse an Technologie, KI und Lehre beruflich umzusetzen.
+               </p>
+            </div>
+         </div>
+         
+         <!-- Interest Cards -->
+         <div class="interest-cards">
+            <div class="interest-card bg-main2">
+               <h3>🧠 Neuronale Netze & Deep Learning</h3>
+               <p>Die Zukunft der Technologie</p>
+            </div>
+            <div class="interest-card bg-second1">
+               <h3>🎓 Didaktik & Lehre</h3>
+               <p>Wissen vermitteln & teilen</p>
+            </div>
+            <div class="interest-card bg-second2">
+               <h3>🔬 Angewandte Wissenschaft</h3>
+               <p>Forschung & Innovation</p>
+            </div>
+            <div class="interest-card bg-second4">
+               <h3>👥 Organisation & Führung</h3>
+               <p>Teams & Prozesse optimieren</p>
+            </div>
+         </div>
+      </div>
 
-      <h2>Berufliche Interessen</h2>
-      <img src="./assets/img/me_game_jam.jpg" alt="Me at work" style="width: 100%; max-width: 500px; float: right; margin-left: 20px;">
-      <p style="text-align: justify;">Im Laufe des Studiums und schon davor, habe ich das Interesse für mehrere Bereiche entwickelt. Hierbei gehe ich nicht auf Stellenbezeichnungen wie Softwareentwickler oder Projektmanager ein. Auch die verschiedenen Programmiersprachen sind hier nicht relevant. Hier geht es um die Bereiche, die mich interessieren und wo ich zukünftig gerne arbeiten würde. </p> <br>
-      <h3>Neuronale Netze</h3>
-      <p style="text-align: justify;">Schon bevor ich 2018 mit dem Studium begonnen habe, hatte ich großes Interesse an dem Thema künstliche Intelligenz. Selbst betrachte ich den Begriff KI aber als Kampfwort, da dieser zu ungenau für eine beschreibende Definition ist und nach dem ChatGPT-Hype vor allem fürs Marketing verwendet wird. Mein Interesse liegt bei neuronalen Netzen bzw. Deep Learning. Ich sehe in diesen Bereichen die Zukunft der Entwicklung und stelle sie auf eine ähnliche Stufe wie die Erfindung und Verbreitung des Internets. Da mich dieses Thema stark interessiert, informiere ich mich auch privat darüber, jedoch ist es gerade als Absolvent schwierig, in diesem Bereich Berufserfahrungen zu sammeln, wenn diese nicht schon vorhanden sind. Im Laufe des Studiums habe ich an verschiedenen KI-Projekten gearbeitet. So z. B.: ein Modell, welches verschiedene Lebensmittel erkennt und die entsprechenden Nährwerte auf einem Augmented-Reality-Tisch projiziert, ein XAI (Explainable AI) Modell, welches visuell die Komplexität eines neuronalen Netzes aufzeigen und gleichzeitig die Blackbox begreiflicher machen soll, oder die Arbeit in meiner Masterthesis, bei der das neuronale Netz (ein Neural Radiance Fields) eine fotorealistische 3D-Repräsentation einer echten Szene approximiert, in der sich in Echtzeit unabhängig bewegt werden kann. <br> <br></p>
+      <!-- Detailed Information Accordion -->
+      <div class="about-details">
+         <h2 class="details-title">Mehr über meine Interessen erfahren</h2>
+         
+         <!-- Personal Story Accordion -->
+         <button class="accordion bg-main3">
+            <span class="accordion-icon">📖</span>
+            <span class="accordion-title">Meine Geschichte - Vom Lagerlogistiker zum Informatiker</span>
+         </button>
+         <div class="panel">
+            <div class="panel-content">
+               <img src="./assets/img/me_game_jam.jpg" alt="Patrick bei der Arbeit" class="panel-image-right">
+               <p><strong>Hey, ich bin Patrick.</strong></p>
+               <p>Da ich erst mit 28 Jahren angefangen habe zu studieren, bin ich ein älterer Absolvent als die meisten Studierenden. 
+               Der Vorteil ist, dass ich ganz genau weiß, wo ich im Leben stehe. Erfahrungen sammeln durfte und auch weiß, 
+               wie die Arbeitswelt aussieht und funktioniert.</p>
+               
+               <p>Nachdem ich meinen Hauptschulabschluss und anschließend meine 3-jährige Berufsausbildung zur Fachkraft für 
+               Lagerlogistik abgeschlossen hatte, habe ich mehrere Jahre in der Logistik und in anderen Bereichen gearbeitet und 
+               Berufserfahrung sammeln dürfen.</p>
+               
+               <p>Ich habe gemerkt, dass diese Arbeit nicht das ist, was ich mir für meine Zukunft wünscheWas dazu führte, dass ich in eine Arbeitslosigkeit gerutscht bin, die ich heute als 
+               berufliche Neuorientierung bezeichne.</p>
+               
+               <p>Durch meine Berufsausbildung und meinen Hauptschulabschluss konnte ich anschließend das Fachabitur nachholen und 
+               bei der Hochschule Furtwangen meinen B.Sc. und M.Sc. in Medieninformatik erfolgreich abschließen. Die 
+               Arbeit während des Studiums, z. B. im Praktikum, als Lehrbeauftragter oder auch bei studentischen Projekten, machten 
+               mir sehr viel Spaß. Hierdurch habe ich gelernt, dass ich die richtige Entscheidung getroffen habe.</p>
+            </div>
+         </div>
 
-      <h3>Didaktik</h3>
-      <p style="text-align: justify;">Während meines Studiums hatte ich das Glück als studentische Hilfskraft, Erstsemester zu unterrichten und ihnen die Welt der Programmierung beizubringen. Nach meiner Tätigkeit als studentische Hilfskraft wurde mir angeboten, als Lehrbeauftragter die Verantwortung zu übernehmen und die Inhalte so zu gestalten, wie ich sie für richtig empfinde. Inklusive der Prüfungsleistung. Diese Arbeit hat mir sehr viel Spaß gemacht und mich persönlich auch sehr weitergebracht. Ich habe während dieser Tätigkeit als Lehrbeauftragter erst richtig wahrgenommen, was es bedeutet, Inhalte tatsächlich zu verstehen. Wie Menschen denken, wie Menschen geführt werden wollen und wie mit ihnen umgegangen werden muss. Ich habe verstanden, dass ein Thema nur dann verstanden wird, wenn es anderen Personen erklärt werden kann, die keine Erfahrung damit haben. Dies hat auch meine Art beeinflusst, wie ich mit anderen Menschen kommuniziere und meine Inhalte präsentiere. Ich sehe die Lehre als besonders spannenden und wichtigen Bereich. Sowohl selbst Inhalte zu lehren als auch an Projekten zu arbeiten, die dafür gedacht sind, Inhalte zu vermitteln, und natürlich auch ein Leben lang selbst zu lernen. </p><br>
+         <!-- Neural Networks Accordion -->
+         <button class="accordion bg-main2">
+            <span class="accordion-icon">🧠</span>
+            <span class="accordion-title">Neuronale Netze & Deep Learning</span>
+         </button>
+         <div class="panel">
+            <div class="panel-content">
+               <p>Schon bevor ich 2018 mit dem Studium begonnen habe, hatte ich großes Interesse an dem Thema künstliche Intelligenz. 
+               Selbst betrachte ich den Begriff KI aber als Kampfwort, da dieser zu ungenau für eine beschreibende Definition ist und 
+               nach dem ChatGPT-Hype vor allem fürs Marketing verwendet wird.</p>
+               
+               <p><strong>Mein Interesse liegt bei neuronalen Netzen bzw. Deep Learning.</strong> Ich sehe in diesen Bereichen die 
+               Zukunft der Entwicklung und stelle sie auf eine ähnliche Stufe wie die Erfindung und Verbreitung des Internets. Da mich 
+               dieses Thema stark interessiert, informiere ich mich auch privat darüber, jedoch ist es gerade als Absolvent schwierig, 
+               in diesem Bereich Berufserfahrungen zu sammeln, wenn diese nicht schon vorhanden sind.</p>
+               
+               <div class="highlight-box bg-second3">
+                  <h4 class="c2-main">Meine KI-Projekte:</h4>
+                  <ul>
+                     <li><strong>Lebensmittel-Erkennungsmodell:</strong> Erkennt verschiedene Lebensmittel und projiziert entsprechende Nährwerte auf einem Augmented-Reality-Tisch.</li>
+                     <li><strong>XAI (Explainable AI) Modell:</strong> Zeigt visuell die Komplexität eines neuronalen Netzes auf und macht die Blackbox begreiflicher.</li>
+                     <li><strong>Neural Radiance Fields (Masterthesis):</strong> Approximiert eine fotorealistische 3D-Repräsentation einer echten Szene, in der sich in Echtzeit unabhängig bewegt werden kann</li>
+                     <li><strong>SILOG (Safe Intralogistics):</strong> Entwicklung eines Systems zur Gefahrenprävention, bei dem ein trainiertes Modell erkennt, wenn sich Personen unerlaubt oder gefährlich auf einem Förderband bewegen, um in solchen Fällen automatisiert das Band zu stoppen oder eine Alarmmeldung auszulösen.</li>
+                     <li><strong>SALT (Smart automatic loading of Trucks):</strong> Entwicklung eines KI-gestützten Systems zur automatisierten Entladung von Gitterboxen. Ziel war es, ein neuronales Netz zu trainieren, das unterschiedliche Objekte in einer Gitterbox erkennt und die Be- und Entladung entsprechend steuert (nur Recherche).</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
 
-      <h3>Angewande Wissenschaften</h3>
-      <p style="text-align: justify;">Während des Masters war die Arbeit im wissenschaftlichen Kontext besonders stark ausgeprägt. Hierbei ist für mich meine eigene Weiterentwicklung das Spannende. Stillstand betrachte ich persönlich als negativ und beziehe mich hierbei auch auf den technologischen Fortschritt. Es macht mir Spaß, eine Idee zu nehmen oder zu entwickeln und sich dann mit den möglichen Technologien auseinanderzusetzen, die dafür geeignet sind, die Idee umzusetzen. Es fordert, dass sich stetig mit neuen Inhalten auseinandergesetzt werden muss, dass der Stand der Technik immer aktuell ist und das Problem und diese Lösung immer einer besonderen Betrachtung bedürfen. Es stellt eine Herausforderung dar, da deren Ausgang oft nicht einzuschätzen ist, und umso mehr ist das Ergebnis am Ende dann positiver, wenn Dinge entwickelt wurden, die nicht im Alltag schon zur Gewohnheit wurden.</p> <br>
+         <!-- Teaching Accordion -->
+         <button class="accordion bg-second1">
+            <span class="accordion-icon">🎓</span>
+            <span class="accordion-title">Didaktik & Lehre</span>
+         </button>
+         <div class="panel">
+            <div class="panel-content">
+               <p>Während meines Studiums hatte ich das Glück als studentische Hilfskraft, Erstsemester zu unterrichten und ihnen die 
+               Welt der Programmierung beizubringen. Nach meiner Tätigkeit als studentische Hilfskraft wurde mir angeboten, als 
+               Lehrbeauftragter die Verantwortung zu übernehmen und die Inhalte so zu gestalten, wie ich sie für richtig empfinde. 
+               Inklusive der Prüfungsleistung.</p>
+               
+               <div class="highlight-box" style="background-color: #effcef;">
+                  <p class="c2-main"><strong>Diese Arbeit hat mir sehr viel Spaß gemacht und mich persönlich auch sehr weitergebracht.</strong> 
+                  Ich habe während dieser Tätigkeit als Lehrbeauftragter erst richtig wahrgenommen, was es bedeutet, Inhalte tatsächlich zu verstehen.</p>
+               </div>
+               
+               <p>Wie Menschen denken, wie Menschen geführt werden wollen und wie mit ihnen umgegangen werden muss. Ich habe verstanden, 
+               dass ein Thema nur dann verstanden wird, wenn es anderen Personen erklärt werden kann, die keine Erfahrung damit haben. 
+               Dies hat auch meine Art beeinflusst, wie ich mit anderen Menschen kommuniziere und meine Inhalte präsentiere.</p>
+               
+               <p>Ich sehe die Lehre als besonders spannenden und wichtigen Bereich. Sowohl selbst Inhalte zu lehren als auch an 
+               Projekten zu arbeiten, die dafür gedacht sind, Inhalte zu vermitteln, und natürlich auch ein Leben lang selbst zu lernen.</p>
+            </div>
+         </div>
 
-      <h3>Führung und Organisation</h3>
-      <p style="text-align: justify;"> Ich sehe mich zu den Menschen, die das Große und Ganze betrachten wollen und versuchen, nicht nur die Prozesse hinter dem Handel zu verstehen, sondern diese auch zu optimieren. Ich besitze einen ausgeprägten organisatorischen Blick und die Fähigkeit, auch komplexe Prozesse einfach darzustellen. Meine Tätigkeit als Vorsitzender der Verfassten Studierendenschaft und damit als Hauptverantwortlicher für Tausende Studierende einer Anstalt des Öffentlichen Rechts hat mir viel über Führung und Organisation gezeigt. Dabei geht es nicht darum, alles zu wissen oder immer eine Antwort auf alle Inhalte zu haben, sondern um die Fähigkeit, diese Probleme zu lösen. Zu wissen, was die Stärken und Schwächen von Menschen sind, um sie effizient einzusetzen. Ressourcen und Kapazitäten so einzusetzen, dass es nicht nur zu einem erfolgreichen, sondern bestenfalls zu einem optimalen Ergebnis führt. Dabei sind ein kontinuierlicher Verbesserungsprozess und richtige Kommunikation im Vordergrund.</p>
+         <!-- Applied Science Accordion -->
+         <button class="accordion bg-second2">
+            <span class="accordion-icon">🔬</span>
+            <span class="accordion-title">Angewandte Wissenschaften</span>
+         </button>
+         <div class="panel">
+            <div class="panel-content">
+               <p>Während des Masters war die Arbeit im wissenschaftlichen Kontext besonders stark ausgeprägt. Hierbei ist für mich 
+               meine eigene Weiterentwicklung das Spannende. <strong>Stillstand betrachte ich persönlich als negativ</strong> und 
+               beziehe mich hierbei auch auf den technologischen Fortschritt.</p>
+               
+               <p>Es macht mir Spaß, eine Idee zu nehmen oder zu entwickeln und sich dann mit den möglichen Technologien 
+               auseinanderzusetzen, die dafür geeignet sind, die Idee umzusetzen. Es fordert, dass sich stetig mit neuen Inhalten 
+               auseinandergesetzt werden muss, dass der Stand der Technik immer aktuell ist und das Problem und diese Lösung immer 
+               einer besonderen Betrachtung bedürfen.</p>
+               
+               <div class="highlight-box" style="background-color: #e8f0ff;">
+                  <p class="c2-main">Es stellt eine Herausforderung dar, da deren Ausgang oft nicht einzuschätzen ist, und umso mehr ist das 
+                  Ergebnis am Ende dann positiver, wenn Dinge entwickelt wurden, die nicht im Alltag schon zur Gewohnheit wurden.</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Leadership Accordion -->
+         <button class="accordion bg-second4">
+            <span class="accordion-icon">👥</span>
+            <span class="accordion-title">Führung und Organisation</span>
+         </button>
+         <div class="panel">
+            <div class="panel-content">
+               <p>Ich sehe mich zu den Menschen, die das Große und Ganze betrachten wollen und versuchen, nicht nur die Prozesse 
+               hinter dem Handel zu verstehen, sondern diese auch zu optimieren. Ich besitze einen ausgeprägten organisatorischen 
+               Blick und die Fähigkeit, auch komplexe Prozesse einfach darzustellen.</p>
+               
+               <div class="highlight-box" style="background-color: #f5e8ff;">
+                  <h4 class="c2-main">Meine Führungserfahrung:</h4>
+                  <p class="c2-main"><strong>Vorsitzender der Verfassten Studierendenschaft</strong> - Hauptverantwortlicher für 
+                  Tausende Studierende einer Anstalt des Öffentlichen Rechts</p>
+                  <p class="c2-main"><strong>Führung von Teams als Lehrbeauftragter</strong> - Als Lehrbeauftragter habe ich Studierende im Bereich Programmierung und Konzeption betreut und dabei ein Team angeleitet.</p>
+               </div>
+               
+               <p>Diese Tätigkeit hat mir viel über Führung und Organisation gezeigt. Dabei geht es nicht darum, alles zu wissen oder 
+               immer eine Antwort auf alle Inhalte zu haben, sondern um die Fähigkeit, diese Probleme zu lösen. Zu wissen, was die 
+               Stärken und Schwächen von Menschen sind, um sie effizient einzusetzen.</p>
+               
+               <p>Ressourcen und Kapazitäten so einzusetzen, dass es nicht nur zu einem erfolgreichen, sondern bestenfalls zu einem 
+               optimalen Ergebnis führt. Dabei sind ein kontinuierlicher Verbesserungsprozess und richtige Kommunikation im Vordergrund.</p>
+            </div>
+         </div>
+      </div>
    </div>
 </body>
 

@@ -26,6 +26,25 @@ require './includes/auth.php';
    <div class="container_dashboard">
       <h1>Erfahrungen</h1>
 
+      <button class="accordion">Fullstack Softwareentwickler/KI</button>
+      <div class="panel">
+         <p style="text-align: justify;">
+            Im Rahmen meiner Tätigkeit als Fullstack-Entwickler war ich in den letzten sechs Monaten an der Entwicklung und Weiterentwicklung einer webbasierten Logistikplattform beteiligt. Ziel des Projekts war die Echtzeitvisualisierung und Steuerung des Materialflusses in einem Lager. Meine Aufgaben umfassten sowohl Backend- als auch Frontend-Entwicklung – von der Gestaltung nutzerfreundlicher Oberflächen bis hin zur effizienten Datenverarbeitung und -bereitstellung.
+         </p>
+         <p style="text-align: justify;">
+            Ein besonderer Fokus lag auf der Konzeption und Umsetzung von Prototypen für KI-gestützte Komponenten. Dazu zählte unter anderem die Weiterentwicklung eines Materialflussrechners sowie die Mitarbeit an zwei Forschungsprojekten im Bereich KI und Intralogistik:
+         </p>
+         <ul style="text-align: justify;">
+            <li>
+               <strong>SILOG (Safe Intralogistics):</strong> Entwicklung eines Systems zur Gefahrenprävention, bei dem ein trainiertes Modell erkennt, wenn sich Personen unerlaubt oder gefährlich auf einem Förderband bewegen, um in solchen Fällen automatisiert das Band zu stoppen oder eine Alarmmeldung auszulösen.
+            </li>
+            <li>
+               <strong>SALT (Smart automatic loading of Trucks):</strong> Entwicklung eines KI-gestützten Systems zur automatisierten Entladung von Gitterboxen. Ziel war es, ein neuronales Netz zu trainieren, das unterschiedliche Objekte in einer Gitterbox erkennt und die Be- und Entladung entsprechend steuert.
+            </li>
+         </ul>
+      </div>
+
+
       <button class="accordion">Hochschullehre</button>
       <div class="panel">
          <video class="ml-2" style="clear:right; float: right" width="480" autoplay controls loop muted>

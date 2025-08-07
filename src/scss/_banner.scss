@@ -1,6 +1,6 @@
 .banner {
    display: none;
-
+   z-index: 1000;
    @include breakpoint("xl") {
          display: block;
          padding: 1rem 10rem;

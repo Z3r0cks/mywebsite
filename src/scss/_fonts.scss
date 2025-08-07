@@ -101,7 +101,7 @@ $fs-p: 13px;
    }
 
    p,
-   a {
+   a, li {
       color: $c3-main;
       font-size: $fs-p;
       line-height: $lh-p;
@@ -139,7 +139,7 @@ $fs-p: 13px;
       }
 
       p,
-      a {
+      a, li {
          font-size: $fs-p * $scale-fs-sm;
          line-height: $lh-p * $scale-lh-sm;
       }
@@ -171,7 +171,7 @@ $fs-p: 13px;
       }
 
       p,
-      a {
+      a, li {
          font-size: $fs-p * $scale-fs-md;
          line-height: $lh-p * $scale-lh-md;
       }
@@ -199,7 +199,7 @@ $fs-p: 13px;
       }
 
       p,
-      a {
+      a, li {
          font-size: $fs-p * $scale-fs-lg;
          line-height: $lh-p * $scale-lh-lg;
       }
@@ -227,7 +227,7 @@ $fs-p: 13px;
       }
 
       p,
-      a {
+      a, li {
          font-size: $fs-p * $scale-fs-xl;
          line-height: $lh-p * $scale-lh-xl;
       }
@@ -255,7 +255,7 @@ $fs-p: 13px;
       }
 
       p,
-      a {
+      a, li {
          font-size: $fs-p * $scale-fs-xxl;
          line-height: $lh-p * $scale-lh-xl;
       }
