@@ -48,23 +48,25 @@ try {
         <a href="logout"><button class="btn btn--main btn--nav" data-translate="nav.logout">Abmelden</button></a>
     </div>
     <div class="container_dashboard">
-        <h1><?php if ($is_guest) { ?>
-                <span data-translate="dashboard.welcome_guest">Willkommen Gast</span>
-            <?php } else { ?>
-                <span data-translate="dashboard.welcome">Willkommen im Dashboard</span>, <?= htmlspecialchars($username) ?>
-            <?php } ?></h1>
-        <p><?php if ($is_guest) { ?>
-                <span data-translate="dashboard.intro_guest">Hier können Sie einen ersten Eindruck von meinen Qualifikationen und Erfahrungen bekommen. Für weitere Informationen kontaktieren Sie mich gerne direkt.</span>
-            <?php } elseif ($initial_apply) { ?>
-                <span data-translate="dashboard.intro_individual">Schön, dass Sie hier her gefunden haben und meine Initiativbewerbung bei Ihnen in Betracht ziehen.</span>
-            <?php } else { ?>
-                <span data-translate="dashboard.intro_job" data-job="<?= htmlentities($job_desc) ?>">Schön, dass Sie hier her gefunden haben und meine Bewerbung als <?= htmlentities($job_desc) ?> in Betracht ziehen.</span>
-            <?php } ?></p>
-    <?php if (!$is_guest) { ?>
-        <p class="mb-3" data-translate="dashboard.info_text">Unten finden Sie weitere Informationen über mich und die Bewerbungsunterlagen sowie Zeugnisse und Empfehlungen als einzelnen Dokumente.</p>
-    <?php } else { ?>
-        <p class="mb-3" data-translate="dashboard.info_text_guest">Erkunden Sie die verfügbaren Bereiche um mehr über meine Qualifikationen zu erfahren.</p>
-    <?php } ?>
+        <div class="container__title">
+            <?php if ($is_guest) { ?>
+                    <h4 class="container__title--text" data-translate="dashboard.welcome_guest">Willkommen Gast</h4>
+                <?php } else { ?>
+                    <h4 class="container__title--text" data-translate="dashboard.welcome">Willkommen im Dashboard</h4>, <?= htmlspecialchars($username) ?>
+                <?php } ?></h1>
+            <?php if ($is_guest) { ?>
+                    <span data-translate="dashboard.intro_guest">Hier können Sie einen ersten Eindruck von meinen Qualifikationen und Erfahrungen bekommen. Für weitere Informationen kontaktieren Sie mich gerne direkt.</span>
+                <?php } elseif ($initial_apply) { ?>
+                    <span data-translate="dashboard.intro_individual">Schön, dass Sie hier her gefunden haben und meine Initiativbewerbung bei Ihnen in Betracht ziehen.</span>
+                <?php } else { ?>
+                    <span data-translate="dashboard.intro_job" data-job="<?= htmlentities($job_desc) ?>">Schön, dass Sie hier her gefunden haben und meine Bewerbung als <?= htmlentities($job_desc) ?> in Betracht ziehen.</span>
+                <?php } ?>
+        <?php if (!$is_guest) { ?>
+            <span  data-translate="dashboard.info_text">Unten finden Sie weitere Informationen über mich und die Bewerbungsunterlagen sowie Zeugnisse und Empfehlungen als einzelnen Dokumente.</span>
+        <?php } else { ?>
+            <span  data-translate="dashboard.info_text_guest">Erkunden Sie die verfügbaren Bereiche um mehr über meine Qualifikationen zu erfahren.</span>
+        <?php } ?>
+    </div>
 
     <div class="boxWrapper">
         <div class="boxWrapper__inner">
@@ -297,6 +299,7 @@ try {
             }, 500);
         });
     </script>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

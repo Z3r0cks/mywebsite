@@ -106,9 +106,10 @@ print_r(randomPassword());
          <button type="submit">Upload</button>
       </form>
    </div>
-</body>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 <script>
    el = '<select name="user"> <option value="false">False</option> <?php foreach ($users as $user) : ?><option value="<?= $user['user_id'] ?>"><?= $user['user_name'] ?></option><?php endforeach; ?> </select> <br>'
 </script>
 
+</body>
 </html>

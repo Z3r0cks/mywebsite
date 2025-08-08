@@ -174,6 +174,7 @@ try {
          <button type="submit">Hinzufügen</button>
       </form>
    </div>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

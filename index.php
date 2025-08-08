@@ -91,13 +91,13 @@ if (empty($_SESSION['csrf_token'])) {
             </div>
             <div class="link_logo--wrapper">
                 <a href=https://www.linkedin.com/in/patrick-kaserer>
-                    <img class="link_logo link_logo--linked" src=./assets/img/linkedin_logo.png alt=linkedIn>
+                    <img class="link_logo link_logo--linked" src="./assets/img/linkedin_logo.png" alt=linkedIn>
                 </a>
                 <a href=https://www.xing.com/profile/Patrick_Kaserer>
-                    <img class="link_logo link_logo--xing" src=./assets/img/xing_logo.png alt=Xing>
+                    <img class="link_logo link_logo--xing" src="./assets/img/xing_logo.png" alt=Xing>
                 </a>
                 <a href=https://github.com/Z3r0cks>
-                    <img class="link_logo link_logo--github" src=./assets/img/github_logo.png alt=Github></a>
+                    <img class="link_logo link_logo--github" src="./assets/img/github_logo.png" alt=Github></a>
                 <a href="mailto:mail@patrick-kaserer.de"><img class="link_logo link_logo--mail" src=./assets/img/mail.png alt=Mail></a>
             </div>
         </div>

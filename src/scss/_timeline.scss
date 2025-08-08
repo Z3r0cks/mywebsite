@@ -288,28 +288,11 @@ Timeline Styles - Professional CV Timeline
       display: inline-block;
     }
     
-    .timeline-content {
-      padding: 1.5rem;
-    }
-    
-    .timeline-section-title {
-      font-size: 1.5rem;
-    }
-    
-    .timeline-skills {
-      grid-template-columns: 1fr;
-    }
-    
-    .skill-item {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 0.5rem;
-    }
-    
-    .skill-name {
-      min-width: auto;
-      text-align: center;
-    }
+    .timeline-content { padding: 1.5rem; }
+    .timeline-section-title { font-size: 1.5rem; }
+    .timeline-skills { grid-template-columns: 1fr; }
+    .skill-item { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+    .skill-name { min-width: auto; text-align: center; }
   }
   
   @media (max-width: 480px) {

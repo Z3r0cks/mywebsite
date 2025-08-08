@@ -1,0 +1,108 @@
+// Documents table styles
+// Uses color variables from _variables.scss
+
+.documents-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: $c1-main;
+  border-radius: $border-radius_small;
+  overflow: hidden;
+  box-shadow: 0 2px 8px $box-shadow;
+
+  thead {
+    background: $c2-main;
+    color: $c-white;
+  }
+
+  th,
+  td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  th:nth-child(2),
+  td.documents-table__size {
+    width: 105px;
+    text-align: center;
+  }
+
+  th:nth-child(3),
+  td.documents-table__desc {
+    display: none;
+    @media (min-width: $bp-md) {
+      display: block;
+    }
+  }
+
+  th:nth-child(4),
+  td.documents-table__action {
+    width: 50px;
+    text-align: center;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $c2-main;
+
+    &:hover {
+      background: $c2-main;
+      transition: $transition;
+    }
+  }
+
+  &__name a {
+    color: $c-white;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__size {
+    width: 20% !important;
+  }
+
+  &__size,
+  &__desc,
+  &__action {
+    color: $c-white;
+  }
+
+  &__action a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: $border-radius_round;
+    background: transparent;
+  }
+
+  // Enforce icon size regardless of intrinsic SVG dimensions
+  &__icon {
+    width: 24px !important;
+    height: 24px !important;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    display: inline-block;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 2px $box-shadow);
+  }
+
+  // Fallback: any image inside the action cell (robust against missing classes)
+  td.documents-table__action img,
+  tbody td img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  &__empty {
+    text-align: center;
+    color: $c-lightGrey;
+    padding: 1.5rem 0;
+  }
+
+}

@@ -13619,6 +13619,10 @@ Breakpoint Mixin
   opacity: 1 !important;
 }
 
+.no-border {
+  border: none !important;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -13727,7 +13731,8 @@ th {
 }
 
 html {
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -13764,9 +13769,24 @@ html {
     width: 70rem;
   }
 }
+.container__title {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2f2f2f;
+}
+.container__title span {
+  font-size: 1rem !important;
+  line-height: 1rem;
+}
+.container__title h4 {
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
 
 .container_dashboard {
   margin: 0 auto;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   width: 90%;
   position: relative;
 }
@@ -14244,35 +14264,35 @@ header {
 }
 
 .card__red::after {
-  background-color: #6c2421;
+  background-color: rgb(107.953125, 35.984375, 33.046875);
 }
 
 .card__blue::after {
-  background-color: #1a2ea2;
+  background-color: rgb(25.9581589958, 46.410041841, 162.0418410042);
 }
 
 .card__green::after {
-  background-color: #224622;
+  background-color: rgb(33.5483870968, 70.4516129032, 33.5483870968);
 }
 
 .card__purple::after {
-  background-color: #80249f;
+  background-color: rgb(127.6219512195, 35.6707317073, 159.3292682927);
 }
 
 .card__pink::after {
-  background-color: #c72690;
+  background-color: rgb(198.5675675676, 38.4324324324, 144.1216216216);
 }
 
 .card__yellow::after {
-  background-color: #887e18;
+  background-color: rgb(135.7345971564, 125.8767772512, 24.2654028436);
 }
 
 .card__cyan::after {
-  background-color: #1d635c;
+  background-color: rgb(28.6033519553, 99.3966480447, 92.2458100559);
 }
 
 .card__brown::after {
-  background-color: #63331d;
+  background-color: rgb(99.3966480447, 50.7709497207, 28.6033519553);
 }
 
 .lp_header {
@@ -14556,7 +14576,24 @@ header {
 }
 
 .nav {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2.5rem;
+  background-color: #272727;
+  border-bottom: 1px solid #2f2f2f;
+  z-index: 10;
+  top: 0;
+  left: 0;
   margin-bottom: 2rem;
+}
+.nav button {
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* --------------------------------------------------
@@ -15257,7 +15294,7 @@ Dashboard Icons - Timeline & About Me
   max-width: 600px;
   padding: 2rem;
   border-radius: 35px;
-  color: white;
+  color: #d3d3d3;
   text-align: center;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -15307,6 +15344,7 @@ Dashboard Icons - Timeline & About Me
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #d3d3d3;
 }
 .study-areas .area-card:hover {
   transform: translateY(-5px);
@@ -15314,7 +15352,7 @@ Dashboard Icons - Timeline & About Me
 }
 .study-areas .area-card .area-header {
   padding: 1.5rem;
-  color: white;
+  color: #d3d3d3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15327,13 +15365,13 @@ Dashboard Icons - Timeline & About Me
 .study-areas .area-card .area-header .area-percentage {
   font-size: 1.1rem;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.2);
+  background: #464646;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
 }
 .study-areas .area-card .area-content {
   padding: 1.5rem;
-  background: white;
+  background: #d3d3d3;
 }
 .study-areas .area-card .area-content .skills-list {
   list-style: none;
@@ -15342,8 +15380,8 @@ Dashboard Icons - Timeline & About Me
 }
 .study-areas .area-card .area-content .skills-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  color: #464646;
+  border-bottom: 1px solid #d3d3d3;
+  color: #010101;
   font-size: 1rem;
 }
 .study-areas .area-card .area-content .skills-list li:last-child {
@@ -15358,13 +15396,13 @@ Dashboard Icons - Timeline & About Me
   color: #0f7dbd;
   font-weight: 600;
 }
-.study-areas .informatik-card .area-header {
+.study-areas .computer_science-card .area-header {
   background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
 }
-.study-areas .medien-card .area-header {
+.study-areas .media-card .area-header {
   background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
 }
-.study-areas .wirtschaft-card .area-header {
+.study-areas .economics-card .area-header {
   background: linear-gradient(135deg, #2e6c48 0%, #50b375 100%);
 }
 
@@ -15399,7 +15437,7 @@ Dashboard Icons - Timeline & About Me
   }
 }
 .studium-details .explanation-card {
-  background: white;
+  background: #d3d3d3;
   padding: 2rem;
   border-radius: 35px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -15446,24 +15484,23 @@ Dashboard Icons - Timeline & About Me
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
-.studium-details .core-statement .statement-content blockquote {
-  font-size: 1.1rem;
-  line-height: 1.7;
+
+.blockquote {
   color: #464646;
   font-style: italic;
   margin: 0;
   position: relative;
 }
-.studium-details .core-statement .statement-content blockquote::before {
+.blockquote::before {
   content: '"';
-  font-size: 4rem;
+  font-size: 5rem;
   color: #0f7dbd;
   position: absolute;
-  top: -1rem;
+  top: 0;
   left: -1rem;
-  opacity: 0.3;
+  opacity: 0.5;
 }
-.studium-details .core-statement .statement-content blockquote strong {
+.blockquote strong {
   color: #0f7dbd;
   font-weight: 700;
 }
@@ -15588,4 +15625,143 @@ Dashboard Icons - Timeline & About Me
     opacity: 1;
     transform: translateY(0);
   }
+}
+.documents-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #272727;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(1, 1, 1, 0.3490196078);
+}
+.documents-table thead {
+  background: #464646;
+  color: #d3d3d3;
+}
+.documents-table th,
+.documents-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: middle;
+}
+.documents-table th:nth-child(2),
+.documents-table td.documents-table__size {
+  width: 105px;
+  text-align: center;
+}
+.documents-table th:nth-child(3),
+.documents-table td.documents-table__desc {
+  display: none;
+}
+@media (min-width: 768px) {
+  .documents-table th:nth-child(3),
+  .documents-table td.documents-table__desc {
+    display: block;
+  }
+}
+.documents-table th:nth-child(4),
+.documents-table td.documents-table__action {
+  width: 50px;
+  text-align: center;
+}
+.documents-table tbody tr {
+  border-bottom: 1px solid #464646;
+}
+.documents-table tbody tr:hover {
+  background: #464646;
+  transition: 0.3s;
+}
+.documents-table__name a {
+  color: #d3d3d3;
+  text-decoration: none;
+  font-weight: 600;
+}
+.documents-table__name a:hover {
+  text-decoration: underline;
+}
+.documents-table__size {
+  width: 20% !important;
+}
+.documents-table__size, .documents-table__desc, .documents-table__action {
+  color: #d3d3d3;
+}
+.documents-table__action a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+}
+.documents-table__icon {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  display: inline-block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(1, 1, 1, 0.3490196078));
+}
+.documents-table td.documents-table__action img,
+.documents-table tbody td img {
+  width: 24px !important;
+  height: 24px !important;
+}
+.documents-table__empty {
+  text-align: center;
+  color: #959595;
+  padding: 1.5rem 0;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #272727;
+  color: #d3d3d3;
+  padding: 16px 0;
+  border-top: 1px solid #2f2f2f;
+}
+.site-footer .site-footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.site-footer .site-footer__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.site-footer .site-footer__rights {
+  color: #959595;
+}
+.site-footer .site-footer__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-footer .site-footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50%;
+  background: #2f2f2f;
+  transition: background 0.3s, transform 0.3s;
+}
+.site-footer .site-footer__icon-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+.site-footer .site-footer__icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }

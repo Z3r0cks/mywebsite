@@ -39,7 +39,7 @@ try {
     <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 </head>
 
@@ -50,22 +50,47 @@ try {
     </div>
     <div class="container_dashboard">
 
-        <h1>Willkommen im bei den Dokumenten, <?= htmlspecialchars($user_name) ?></h1>
+        <h1>Willkommen bei den Dokumenten, <?= htmlspecialchars($user_name) ?></h1>
         <p class="mb-3">Unten finden Sie nun Bewerbungsunterlagen und Zeugnisse als einzelne Dateien.</p>
 
-        <table class="mb-2" style="width: 100%;">
-            <?php foreach ($documents as $document) : ?>
+        <table class="documents-table mb-2">
+            <thead>
                 <tr>
-                    <td class="table_desc__first"><a class="table_desc" href="download.php?file=<?= $document['file_hash'] ?>"><?= htmlspecialchars($document['file_name']) ?></a></td>
-                    <td class="table_desc
-                    "><?= $document['file_size'] ?> KB</td>
-                    <td class="table_desc
-                    table_desc__second"> <?= htmlspecialchars($document['file_desc']) ?></td>
-                    <td><a class="table_desc" href="download.php?file=<?= $document['file_hash'] ?>"><img style="width: 30px" src="./assets/svg/download-button.svg" alt="download icon"></a></td>
+                    <th>Datei</th>
+                    <th>Größe</th>
+                    <th>Beschreibung</th>
+                    <th>Aktion</th>
                 </tr>
-            <?php endforeach; ?>
+            </thead>
+            <tbody>
+                <?php if (!empty($documents)) : 
+                        $count = count($documents);
+                        foreach ($documents as $index => $document) :
+                        $border = $index === $count - 1 ? 'class="no-border"' : "" ?>
+
+                            <tr <?= $border ?>>
+                                <td class="documents-table__name">
+                                    <a class="table_desc" href="download.php?file=<?= $document['file_hash'] ?>"><?= htmlspecialchars($document['file_name']) ?></a>
+                                </td>
+                                <td class="documents-table__size"><?= number_format((float)$document['file_size']) ?> KB</td>
+                                <td class="documents-table__desc"><?= htmlspecialchars($document['file_desc']) ?></td>
+                                <td class="documents-table__action">
+                                    <a class="table_desc" href="download.php?file=<?= $document['file_hash'] ?>" aria-label="Download <?= htmlspecialchars($document['file_name']) ?>">
+                                        <img class="documents-table__icon" src="./assets/svg/download-button.svg" alt="Download" />
+                                    </a>
+                                </td>
+                            </tr>
+                            
+                    <?php endforeach; ?>
+                <?php else : ?>
+                        <tr>
+                            <td colspan="4" class="documents-table__empty">Keine Dokumente vorhanden.</td>
+                        </tr>
+                <?php endif; ?>
+            </tbody>
         </table>
     </div>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

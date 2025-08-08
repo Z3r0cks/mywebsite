@@ -231,6 +231,7 @@ if (empty($_SESSION['csrf_token'])) {
        observer.observe(loginForm);
    }
    </script>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

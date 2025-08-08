@@ -1,3 +1,23 @@
 .nav {
+   position: fixed;
+   display: block;
+   top: 0;
+   right: 0;
+   left: 0;
+   height: 2.5rem;
+   background-color: $c1-main;
+   border-bottom: 1px solid $c-darkGrey;
+   z-index: 10;
+   top: 0;
+   left: 0;
    margin-bottom: 2rem;
+   
+   button {
+      border: none;
+      font-size: 1rem;
+      // margin-top: 0;
+      margin-bottom: 0;
+      // padding-top: 0;
+      padding-bottom: 0;
+   }
 }

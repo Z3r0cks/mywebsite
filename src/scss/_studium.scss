@@ -48,7 +48,7 @@
       max-width: 600px;
       padding: 2rem;
       border-radius: $border-radius-cards;
-      color: white;
+      color: $c-white;
       text-align: center;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       
@@ -104,6 +104,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: $c-white;
     
     &:hover {
       transform: translateY(-5px);
@@ -112,7 +113,7 @@
     
     .area-header {
       padding: 1.5rem;
-      color: white;
+      color: $c-white;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -126,7 +127,7 @@
       .area-percentage {
         font-size: 1.1rem;
         font-weight: bold;
-        background: rgba(255, 255, 255, 0.2);
+        background: $c2-main;
         padding: 0.3rem 0.8rem;
         border-radius: 20px;
       }
@@ -134,7 +135,7 @@
     
     .area-content {
       padding: 1.5rem;
-      background: white;
+      background:  $c-white;
       
       .skills-list {
         list-style: none;
@@ -143,8 +144,8 @@
         
         li {
           padding: 0.5rem 0;
-          border-bottom: 1px solid #f0f0f0;
-          color: $c2-main;
+          border-bottom: 1px solid $c-white;
+          color: $c-black;
           font-size: 1rem;
           
           &:last-child {
@@ -166,15 +167,15 @@
     }
   }
   
-  .informatik-card .area-header {
+  .computer_science-card .area-header {
     background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
   }
   
-  .medien-card .area-header {
+  .media-card .area-header {
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
   }
   
-  .wirtschaft-card .area-header {
+  .economics-card .area-header {
     background: linear-gradient(135deg, #2e6c48 0%, #50b375 100%);
   }
 }
@@ -212,7 +213,7 @@
   }
   
   .explanation-card {
-    background: white;
+    background: $c-white;
     padding: 2rem;
     border-radius: $border-radius-cards;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -265,31 +266,31 @@
         margin-bottom: 1.5rem;
         font-weight: 600;
       }
-      
-      blockquote {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        color: $c2-main;
-        font-style: italic;
-        margin: 0;
-        position: relative;
-        
-        &::before {
-          content: '"';
-          font-size: 4rem;
-          color: $c1-second;
-          position: absolute;
-          top: -1rem;
-          left: -1rem;
-          opacity: 0.3;
-        }
-        
-        strong {
-          color: $c1-second;
-          font-weight: 700;
-        }
-      }
     }
+  }
+}
+
+.blockquote {
+  // font-size: 1.1rem;
+  // line-height: 1.7;
+  color: $c2-main;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  
+  &::before {
+    content: '"';
+    font-size: 5rem;
+    color: $c1-second;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    opacity: 0.5;
+  }
+  
+  strong {
+    color: $c1-second;
+    font-weight: 700;
   }
 }
 
@@ -413,3 +414,4 @@
     transform: translateY(0);
   }
 }
+

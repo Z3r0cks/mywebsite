@@ -116,5 +116,8 @@
     "masters_thesis": "Master's Thesis - Synthesized Sensor Data from Neural Radiance Fields",
     "internship_dreiqbik": "Practical Semester - dreiQbik",
     "project_study": "Project Study - Website: \"Blind MeetUp\""
+  },
+  "footer": {
+    "rights": "All rights reserved"
   }
 }

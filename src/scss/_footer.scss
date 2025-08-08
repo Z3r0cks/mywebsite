@@ -1,0 +1,58 @@
+// Footer styles
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $c1-main;
+  color: $c-white;
+  padding: 16px 0;
+  border-top: 1px solid $c-darkGrey;
+
+  .site-footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .site-footer__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .site-footer__rights {
+    color: $c-lightGrey;
+  }
+
+  .site-footer__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .site-footer__icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: $border-radius-round;
+    background: $c-darkGrey;
+    transition: background $transition, transform $transition;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+    }
+  }
+
+  .site-footer__icon {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+}
+

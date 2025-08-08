@@ -1,5 +1,6 @@
 html {
-   padding-top: 1rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
 }
 
 .container {
@@ -24,10 +25,29 @@ html {
    @include breakpoint("xxl") {
       width: 70rem;
    }
+
+   &__title {
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border: 1px solid $c-darkGrey;
+      
+      span {
+         font-size: 1rem !important;
+         line-height: 1rem;
+      }
+      
+      h4 {
+         line-height: 1rem;
+         margin-bottom: 1rem;
+         // font-size: 1rem !important;
+      }
+   }
 }
 
 .container_dashboard {
    margin: 0 auto;
+   padding-top: 1.7rem;
+   padding-bottom: 1.7rem;
    width: 90%;
    position: relative;
 

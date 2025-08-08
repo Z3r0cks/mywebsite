@@ -14,14 +14,14 @@ require './includes/auth.php';
    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
    <link rel="shortcut icon" href="./assets/favicons/favicon.ico" />
-   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
 </head>
 
 <body>
    <div class="nav">
-      <a href="logout.php"><button class="btn btn--main btn--nav">Abmelden</button></a>
-      <a href="dashboard"><button class="btn btn--main btn--nav">Zurück </button></a>
+      <a href="logout"><button class="btn btn--main btn--nav">Abmelden</button></a>
+      <a href="dashboard"><button class="btn btn--main btn--nav">Zurück</button></a>
    </div>
    <div class="container_dashboard">
       <h1>Erfahrungen</h1>
@@ -29,18 +29,11 @@ require './includes/auth.php';
       <button class="accordion">Fullstack Softwareentwickler/KI</button>
       <div class="panel">
          <p style="text-align: justify;">
-            Im Rahmen meiner Tätigkeit als Fullstack-Entwickler war ich in den letzten sechs Monaten an der Entwicklung und Weiterentwicklung einer webbasierten Logistikplattform beteiligt. Ziel des Projekts war die Echtzeitvisualisierung und Steuerung des Materialflusses in einem Lager. Meine Aufgaben umfassten sowohl Backend- als auch Frontend-Entwicklung – von der Gestaltung nutzerfreundlicher Oberflächen bis hin zur effizienten Datenverarbeitung und -bereitstellung.
+            Im Rahmen meiner Tätigkeit als Fullstack-Entwickler war ich in den letzten sechs Monaten an der Entwicklung und Weiterentwicklung einer webbasierten Logistikplattform beteiligt. Aufgabe der Software ist die Echtzeitvisualisierung und Steuerung des Materialflusses in einem Lager. Meine Aufgaben umfassten sowohl Backend- als auch Frontend-Entwicklung – von der Gestaltung nutzerfreundlicher Oberflächen bis hin zur effizienten Datenverarbeitung und -bereitstellung.
          </p>
          <p style="text-align: justify;">
-            Ein besonderer Fokus lag auf der Konzeption und Umsetzung von Prototypen für KI-gestützte Komponenten. Dazu zählte unter anderem die Weiterentwicklung eines Materialflussrechners sowie die Mitarbeit an zwei Forschungsprojekten im Bereich KI und Intralogistik:
+            Ein besonderer Fokus lag auf der Konzeption und Umsetzung von Prototypen für KI-gestützte Komponenten. Dazu zählte unter anderem die Konzeption und Weiterentwicklung eines Materialflussrechners und Lagerverwaltungssystem sowie die Mitarbeit an zwei Forschungsprojekten im Bereich KI und Intralogistik.
          </p>
-         <ul style="text-align: justify;">
-            <li>
-               <strong>SILOG (Safe Intralogistics):</strong> Entwicklung eines Systems zur Gefahrenprävention, bei dem ein trainiertes Modell erkennt, wenn sich Personen unerlaubt oder gefährlich auf einem Förderband bewegen, um in solchen Fällen automatisiert das Band zu stoppen oder eine Alarmmeldung auszulösen.
-            </li>
-            <li>
-               <strong>SALT (Smart automatic loading of Trucks):</strong> Entwicklung eines KI-gestützten Systems zur automatisierten Entladung von Gitterboxen. Ziel war es, ein neuronales Netz zu trainieren, das unterschiedliche Objekte in einer Gitterbox erkennt und die Be- und Entladung entsprechend steuert.
-            </li>
          </ul>
       </div>
 
@@ -70,10 +63,12 @@ require './includes/auth.php';
       <button class="accordion">Masterthesis - Synthesized Sensor Data from Neural Radiance Fields</button>
       <div class="panel">
 
-         <img style="clear:right; float: right" class="ml-2 mb-1" width="80%" src="./assets/img/result1.png" alt="">
-         <img style="clear:right; float: right" class="ml-2" width="80%" src="./assets/img/result2.png" alt="">
-
-         <p style="text-align: justify;">Die Forschungsfrage hinter meiner Masterthesis ist, ob sich ein LiDAR-Sensor in einem Neural Radiance Fields (NeRF) synthetisieren lässt. Ein NeRF ist eine KI-basierte Methode zum Erstellen einer 3D-Szenenrepräsentation, die aus 2D-Input (Bildern) die Szene fotorealistisch in Echtzeit darstellen kann, in der sich frei bewegt werden kann. Durch die sehr große Anzahl verschiedener LiDAR-Sensoren war die Idee, dass von einer Szene Bilder aufgenommen werden und die Anwendung verwendet wird, um zu entscheiden, welcher Sensor für welche Installation am besten geeignet wäre. Die Herausforderung lag daran, dass das neuronale Netz eine Blackbox ist und die einzelnen Koordinaten und Objekte in der Szene lediglich perspektivisch dargestellt werden. NeRF selbst lernt nur, den RGB-Wert und den Dichtewert an jeder Stelle des Raums zu approximieren. Somit sind Distanzen und Positionen von Objekten in der Szene nicht bekannt. Die Verwendung von anderen Methoden zur 3D-Szenenrepräsentation ist meist mit einem größeren Aufwand verbunden oder führt zu einem weniger genauen Ergebnis. Meine entwickelte Anwendung ist dazu in der Lage, aus jeder beliebigen Perspektive bis weniger als ein mm die Distanz zu jedem Punkt zu messen und dadurch Punktwolken zu erstellen, die mögliche LiDAR-Sensoren repräsentieren können. Auf den Bildern sind zwei verschiedene NeRF-Szenen (keine echten Bilder) von einer echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</p>
+         <p style="text-align: justify;">Die Forschungsfrage hinter meiner Masterthesis war, ob sich ein LiDAR-Sensor in einem Neural Radiance Fields (NeRF) synthetisieren lässt. Ein NeRF ist eine KI-basierte Methode zum Erstellen einer 3D-Szenen-repräsentation, die aus 2D-Input (Bildern) die Szene fotorealistisch in Echtzeit darstellen kann, in der sich frei bewegt werden kann. Dadurch, dass es unendlich verschiedene Arten von LiDAR-Sensoren geben kann, war die Idee, dass von einer Szene Bilder aufgenommen werden und die Anwendung verwendet wird, um zu entscheiden, welcher Sensor für welche Installation am besten geeignet wäre. Die Herausforderung lag daran, dass das neuronale Netz eine Blackbox ist und die einzelnen Koordinaten und Objekte in der Szene lediglich perspektivisch dargestellt werden. NeRF selbst lernt nur, den RGB-Wert und den Dichtewert an jeder Stelle des Raums zu approximieren. Somit sind Distanzen und Positionen von Objekten in der Szene nicht bekannt. Die Verwendung von anderen Methoden zur 3D-Szenenrepräsentation ist meist mit einem größeren Aufwand verbunden oder führt zu einem weniger genauen Ergebnis. Meine entwickelte Anwendung ist dazu in der Lage, aus jeder beliebigen Perspektive bis weniger als ein mm die Distanz zu jedem Punkt zu messen und dadurch Punktwolken zu erstellen, die mögliche LiDAR-Sensoren repräsentieren können. <br> Auf den Bildern sind zwei verschiedene NeRF-Szenen (keine echten Bilder) von einer echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</p>
+         <figure>
+            <img style="clear:right; float: right" class="ml-2 mb-1" width="100%" src="./assets/img/result1.png" alt="">
+            <img style="clear:right; float: right" class="ml-2" width="100%" src="./assets/img/result2.png" alt="">
+            <figcaption>zwei verschiedene NeRF-Szenen von einer echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</figcaption>
+         </figure>
       </div>
 
 
@@ -101,6 +96,7 @@ require './includes/auth.php';
          <p style="text-align: justify;">Im Projekt war ich für die Entwicklung der Anwendung und mit einem weiteren Komilitonen für das Projektmanagement mit Scrum verantwortlich. Auch wenn das Projekt durch einen Professor unterstützt wurde, oblag die Verantwortung für die Idee, das Konzept, Marketing, Entwicklung und Deployment den Studierenden. Durch die Coronapandemie wurde das Projekt nur für einen Tag released um diesen Prozess aufzuzeigen. Das Promotionvideo für die Webanwendung ist im Video zu sehen.</p>
       </div>
    </div>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

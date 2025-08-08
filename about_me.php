@@ -86,13 +86,11 @@ require './includes/db_connect.php';
                Lagerlogistik abgeschlossen hatte, habe ich mehrere Jahre in der Logistik und in anderen Bereichen gearbeitet und 
                Berufserfahrung sammeln dürfen.</p>
                
-               <p>Ich habe gemerkt, dass diese Arbeit nicht das ist, was ich mir für meine Zukunft wünscheWas dazu führte, dass ich in eine Arbeitslosigkeit gerutscht bin, die ich heute als 
-               berufliche Neuorientierung bezeichne.</p>
+               <p>Ich habe erkannt, dass ich mein Leben anders designen möchte. Was dazu führte, dass ich in eine berufliche Neuorientierung begonnen habe.</p>
                
                <p>Durch meine Berufsausbildung und meinen Hauptschulabschluss konnte ich anschließend das Fachabitur nachholen und 
                bei der Hochschule Furtwangen meinen B.Sc. und M.Sc. in Medieninformatik erfolgreich abschließen. Die 
-               Arbeit während des Studiums, z. B. im Praktikum, als Lehrbeauftragter oder auch bei studentischen Projekten, machten 
-               mir sehr viel Spaß. Hierdurch habe ich gelernt, dass ich die richtige Entscheidung getroffen habe.</p>
+               Arbeit während des Studiums, z. B. im Praktikum, als Lehrbeauftragter oder auch bei studentischen Projekten, waren nicht vergleichebar mit der Arbeit davor. Hierdurch habe ich erkannt, dass ich die richtige Entscheidung getroffen habe.</p>
             </div>
          </div>
 
@@ -104,8 +102,7 @@ require './includes/db_connect.php';
          <div class="panel">
             <div class="panel-content">
                <p>Schon bevor ich 2018 mit dem Studium begonnen habe, hatte ich großes Interesse an dem Thema künstliche Intelligenz. 
-               Selbst betrachte ich den Begriff KI aber als Kampfwort, da dieser zu ungenau für eine beschreibende Definition ist und 
-               nach dem ChatGPT-Hype vor allem fürs Marketing verwendet wird.</p>
+               Selbst betrachte ich den Begriff KI als Buzzword. Als Begriff für eine Marketingstrategie zur Erweiterung der Produktlinie.</p>
                
                <p><strong>Mein Interesse liegt bei neuronalen Netzen bzw. Deep Learning.</strong> Ich sehe in diesen Bereichen die 
                Zukunft der Entwicklung und stelle sie auf eine ähnliche Stufe wie die Erfindung und Verbreitung des Internets. Da mich 
@@ -117,7 +114,7 @@ require './includes/db_connect.php';
                   <ul>
                      <li><strong>Lebensmittel-Erkennungsmodell:</strong> Erkennt verschiedene Lebensmittel und projiziert entsprechende Nährwerte auf einem Augmented-Reality-Tisch.</li>
                      <li><strong>XAI (Explainable AI) Modell:</strong> Zeigt visuell die Komplexität eines neuronalen Netzes auf und macht die Blackbox begreiflicher.</li>
-                     <li><strong>Neural Radiance Fields (Masterthesis):</strong> Approximiert eine fotorealistische 3D-Repräsentation einer echten Szene, in der sich in Echtzeit unabhängig bewegt werden kann</li>
+                     <li><strong>Neural Radiance Fields (Masterthesis):</strong> Approximiert eine fotorealistische 3D-Repräsentation einer echten Szene, in der sich in Echtzeit unabhängig bewegt werden kann.</li>
                      <li><strong>SILOG (Safe Intralogistics):</strong> Entwicklung eines Systems zur Gefahrenprävention, bei dem ein trainiertes Modell erkennt, wenn sich Personen unerlaubt oder gefährlich auf einem Förderband bewegen, um in solchen Fällen automatisiert das Band zu stoppen oder eine Alarmmeldung auszulösen.</li>
                      <li><strong>SALT (Smart automatic loading of Trucks):</strong> Entwicklung eines KI-gestützten Systems zur automatisierten Entladung von Gitterboxen. Ziel war es, ein neuronales Netz zu trainieren, das unterschiedliche Objekte in einer Gitterbox erkennt und die Be- und Entladung entsprechend steuert (nur Recherche).</li>
                   </ul>
@@ -132,8 +129,8 @@ require './includes/db_connect.php';
          </button>
          <div class="panel">
             <div class="panel-content">
-               <p>Während meines Studiums hatte ich das Glück als studentische Hilfskraft, Erstsemester zu unterrichten und ihnen die 
-               Welt der Programmierung beizubringen. Nach meiner Tätigkeit als studentische Hilfskraft wurde mir angeboten, als 
+               <p>Während meines Studiums hatte ich das Glück als studentische Hilfskraft, Erstsemester zu unterrichten und ihnen von der 
+               Welt der Programmierung zu begeistern. Nach meiner Tätigkeit als studentische Hilfskraft und dem Abschluss meines Bachelors, wurde mir angeboten, als 
                Lehrbeauftragter die Verantwortung zu übernehmen und die Inhalte so zu gestalten, wie ich sie für richtig empfinde. 
                Inklusive der Prüfungsleistung.</p>
                
@@ -188,7 +185,7 @@ require './includes/db_connect.php';
                <div class="highlight-box" style="background-color: #f5e8ff;">
                   <h4 class="c2-main">Meine Führungserfahrung:</h4>
                   <p class="c2-main"><strong>Vorsitzender der Verfassten Studierendenschaft</strong> - Hauptverantwortlicher für 
-                  Tausende Studierende einer Anstalt des Öffentlichen Rechts</p>
+                  Tausende Studierende einer Anstalt des Öffentlichen Rechts.</p>
                   <p class="c2-main"><strong>Führung von Teams als Lehrbeauftragter</strong> - Als Lehrbeauftragter habe ich Studierende im Bereich Programmierung und Konzeption betreut und dabei ein Team angeleitet.</p>
                </div>
                
@@ -202,6 +199,7 @@ require './includes/db_connect.php';
          </div>
       </div>
    </div>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 </body>
 
 </html>

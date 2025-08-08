@@ -1,3 +1,123 @@
 [2025-08-07 13:08:30] APPLICATION_ERROR - WARNING: Application error: Die Login-Daten waren nicht korrekt. in E:\xampp\htdocs\mywebsite\error.php:114 | URL: /mywebsite/error.php?error=invalid_credentials | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
 Context: {"error_type":"invalid_credentials","url":"\/mywebsite\/error.php?error=invalid_credentials"}
 --------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:40:57] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:42:56] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:43:33] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:12] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:70 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------
+[2025-08-08 13:44:39] PHP_ERROR - WARNING: Undefined variable $index in E:\xampp\htdocs\mywebsite\documents.php:69 | URL: /mywebsite/documents | IP: ::1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Sa
+--------------------------------------------------------------------------------

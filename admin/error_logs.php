@@ -247,6 +247,7 @@ $errors = ErrorHandler::getRecentErrors((int)$limit);
         location.reload();
     }, 30000);
     </script>
+<?php include dirname(__DIR__) . '/includes/footer.php'; ?>
 </body>
 
 </html>
