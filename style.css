@@ -15940,3 +15940,132 @@ Dashboard Icons - Timeline & About Me
   height: 18px;
   display: block;
 }
+
+.ai-page .ai-section {
+  margin-bottom: 30px;
+}
+.ai-page .ai-lead {
+  color: #2e6c48;
+  font-weight: 600;
+}
+.ai-page .ai-examples {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.ai-page .ai-example-card {
+  padding: 15px;
+  border-radius: 5px;
+  color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+}
+.ai-page .ai-example-card .ai-example-title {
+  font-weight: 700;
+}
+.ai-page .ai-example-card .ai-example-desc {
+  opacity: 0.9;
+}
+.ai-page .ai-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.ai-page .ai-neuron-svg {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(1, 1, 1, 0.3490196078);
+}
+.ai-page .ai-table-wrapper {
+  overflow-x: auto;
+}
+.ai-page .ai-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ai-page .ai-table th, .ai-page .ai-table td {
+  border-bottom: 1px solid #959595;
+  padding: 8px;
+  text-align: left;
+}
+.ai-page .ai-table th {
+  color: #0f7dbd;
+}
+.ai-page .ai-list {
+  margin-left: 18px;
+}
+.ai-page .ai-card {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(1, 1, 1, 0.3490196078);
+}
+.ai-page .demo-neuron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.ai-page .demo-controls {
+  display: grid;
+  gap: 8px;
+}
+.ai-page .demo-controls label {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+.ai-page .demo-controls input[type=range] {
+  width: 100%;
+}
+.ai-page .demo-output {
+  display: grid;
+  gap: 8px;
+}
+.ai-page .demo-output .demo-row {
+  display: flex;
+  justify-content: space-between;
+}
+.ai-page .demo-output .demo-bar {
+  height: 16px;
+  background: #959595;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ai-page .demo-output #nn-bar-fill {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(360deg, #2e6c48 35%, #50b375 100%);
+}
+.ai-page .ai-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.ai-page .ai-step {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(1, 1, 1, 0.3490196078);
+}
+.ai-page .ai-step .ai-step-title {
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .ai-page .ai-examples {
+    grid-template-columns: 1fr;
+  }
+  .ai-page .ai-grid {
+    grid-template-columns: 1fr;
+  }
+  .ai-page .demo-neuron {
+    grid-template-columns: 1fr;
+  }
+  .ai-page .ai-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}

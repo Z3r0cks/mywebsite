@@ -12,7 +12,7 @@ if (empty($_SESSION['csrf_token'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Patrick Kaserer</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
@@ -46,24 +46,24 @@ if (empty($_SESSION['csrf_token'])) {
 6  {
 7    "candidate": {
 9      "name": "Patrick Kaserer",
-10      "email": "mail@patrick-kaserer.de",
-11      "location": "Karlsruhe, Germany",
+10     "email": "mail@patrick-kaserer.de",
+11     "location": "Karlsruhe, Germany",
 12     "linkedIn": "https://www.linkedin.com/in/patrick-kaserer/",
 13     "github": "https://github.com/Z3r0cks",
-14     "skills": ["Fullstack Development", "AI", "Neural Radiance Fields", "Problem Solving"],
-15     "availability": "immediately",
-16  }
-17  
-18  <strong>IF</strong> job == "computer science" && candidate == "Patrick Kaserer"
-19      print "Good candidate found!"
-20  <strong>END IF</strong>
-21
-22  <strong>FUNCTION</strong> motivation
-23      return "Finding solutions where others see problems."
-24  <strong>END FUNCTION</strong>
-25
-26  function apply_for_job with "Patrick Kaserer";
-27  EXECUTE send_application()
+14     "hard_skills": ["Software Development", "AI", "Neural Radiance Fields", "Computer Vision"],
+15     "soft_skills": ["Teamwork", "Communication", "Leadership", "Problem Solving", "Adaptability"],
+16     "availability": "immediately",
+17  }
+18  
+19  <strong>IF</strong> job == "computer science" && candidate == "Patrick Kaserer"
+20      print "Good candidate found!"
+21  <strong>END IF</strong>
+22
+23  <strong>FUNCTION</strong> motivation
+24      return "Finding solutions where others see problems."
+25  <strong>END FUNCTION</strong>
+26
+27  function apply_for_job with "Patrick Kaserer";
 28  >
                 </pre>
             </div>

@@ -3,3 +3,6 @@
 /assets/videos
 /vendor
 /logging
+/logs
+/cache
+/testing

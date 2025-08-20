@@ -273,6 +273,7 @@ try {
                 <a class="boxWrapper__a" href="add_comp">Unternehmen Hinzufügen</a></a>
                 <a class="boxWrapper__a" href="add_file">Datei Hinzufügen</a></a>
                 <a class="boxWrapper__a" href="admin/relations.php">Zuweisungen verwalten</a></a>
+                <a class="boxWrapper__a" href="admin/access_logs.php">Access Logs</a></a>
             </div>
         <?php } ?>
     </div>
@@ -302,7 +303,6 @@ try {
         });
     </script>
     <?php include __DIR__ . '/includes/footer.php'; ?>
-    <div class="devBtn"></div>
 </body>
 
 </html>
