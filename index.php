@@ -38,33 +38,34 @@ if (empty($_SESSION['csrf_token'])) {
                     </pre>
                 </div>
                 <pre class="lp_header__pre-code">
-1  Host: your_company.com
-2  Content-Type: application/json
-3  // HR won't read this
-4  CONNECT establish_link_to_future_employer()
-5
-6  {
-7    "candidate": {
-9      "name": "Patrick Kaserer",
-10     "email": "mail@patrick-kaserer.de",
-11     "location": "Karlsruhe, Germany",
-12     "linkedIn": "https://www.linkedin.com/in/patrick-kaserer/",
-13     "github": "https://github.com/Z3r0cks",
-14     "hard_skills": ["Software Development", "AI", "Neural Radiance Fields", "Computer Vision"],
-15     "soft_skills": ["Teamwork", "Communication", "Leadership", "Problem Solving", "Adaptability"],
-16     "availability": "immediately",
+1  <span class="c-comment">// HR won't read this</span>
+2  <span class="c-exec">CONNECT</span> <span class="c-func">establish_link_to_future_employer</span>()
+3
+4  {
+5    <span class="c-var">"candidate"</span>: {
+6    <span class="c-var">"name"</span>: <span class="c-string">"Patrick Kaserer"</span>,
+7    <span class="c-var">"email"</span>: <span class="c-string">"mail@patrick-kaserer.de"</span>,
+8    <span class="c-var">"location"</span>: <span class="c-string">"Karlsruhe, Germany"</span>,
+9    <span class="c-var">"skills"</span>: [
+10     <span class="c-string">"Software Development"</span>, <span class="c-string">"AI"</span>,
+11     <span class="c-string">"Neural Radiance Fields"</span>, <span class="c-string">"Computer Vision"</span>,
+12     <span class="c-string">"Teamwork"</span>,<span class="c-string">"Communication"</span>,
+13     <span class="c-string">"Leadership"</span>,<span class="c-string">"Problem Solving"</span>,
+14     <span class="c-string">"Adaptability"</span>, <span class="c-string">"Project Management"</span>,
+15     ],
+16   <span class="c-var">"availability"</span>: <span class="c-string">"immediately"</span>,
 17  }
-18  
-19  <strong>IF</strong> job == "computer science" && candidate == "Patrick Kaserer"
-20      print "Good candidate found!"
-21  <strong>END IF</strong>
+18 
+19  <span class="c-exec">IF</span> <span class="c-var">job</span> == <span class="c-string">"computer science"</span> && <span class="c-var">candidate</span> == <span class="c-string">"Patrick Kaserer"</span>
+20      <span class="c-func">print</span> <span class="c-string">"Good candidate found!"</span>
+21  <span class="c-exec">END IF</span>
 22
-23  <strong>FUNCTION</strong> motivation
-24      return "Finding solutions where others see problems."
-25  <strong>END FUNCTION</strong>
+23  <span class="c-func-pre">FUNCTION</span> <span class="c-func">motivation</span>
+24      <span class="c-exec">return</span> <span class="c-string">"Finding solutions where others see problems."</span>
+25  <span class="c-func-pre">END FUNCTION</span>
 26
-27  function apply_for_job with "Patrick Kaserer";
-28  >
+27  <span class="c-func-pre">function</span> <span class="c-func">apply_for_job</span> <span class="c-exec">with</span> <span class="c-string">"Patrick Kaserer"</span>
+28  <span class="terminal-cursor">|</span>
                 </pre>
             </div>
             <div class="lp_name">

@@ -35,12 +35,25 @@ $vertical-gradient: linear-gradient(270deg, #2e6c48 0%, #50b375 100%);
 $transition: 0.3s;
 $box-shadow: #01010159;
 
-
 $border-radius_small: 5px;
 $border-radius_image: 15px;
 $border-radius-cards: 35px;
 $border-radius: 45px;
 $border-radius-round: 50%;
+
+$c-func-pre: #477aa3;
+$c-func: #dcdcaa;
+$c-exec: #c586c0;
+$c-var: #9cdcfe;
+$c-string: #ce9178;
+$c-return: #4ec9b0;
+$c-comment: #6a9955;
+$c-keyword: #569cd6;
+$c-number: #b5cea8;
+$c-boolean: #569cd6;
+$c-null: #569cd6;
+$c-undefined: #569cd6;
+
 
 /* --------------------------------------------------
 Fonts

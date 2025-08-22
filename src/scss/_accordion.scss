@@ -19,13 +19,23 @@
   gap: 1rem;
   box-shadow: 0 4px 15px rgba($c-black, 0.1);
   
-  .accordion-icon {
+  &-icon {
     font-size: 1.5rem;
     flex-shrink: 0;
   }
   
-  .accordion-title {
+  &-title {
     flex: 1;
+  }
+
+  &--bg {
+    &:hover {
+      color: $c2-main;
+    }
+
+    &.active {
+      color: $c2-main;
+    }
   }
   
   &::after {
@@ -47,14 +57,12 @@
 }
 
 .panel {
-  padding: 0;
+  padding: 0 1rem;
   margin-bottom: 2rem;
-  display: none;
-  overflow: hidden;
-  border-radius: 0 0 $border-radius-cards $border-radius-cards;
+  transition: height 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba($c-black, 0.05);
   
-  .panel-content {
+  &-content {
     padding: 2rem;
     background: linear-gradient(135deg, $c-beige 0%, $c-white 100%);
     
@@ -89,7 +97,7 @@
     }
   }
   
-  .panel-image-right {
+  &-image-right {
     float: right;
     width: 100%;
     max-width: 300px;
@@ -109,5 +117,4 @@
 .accordion:hover {
   transition: 0.3s;
   background-color: $c-white;
-  color: $c1-main;
 }

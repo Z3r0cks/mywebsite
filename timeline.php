@@ -13,8 +13,6 @@ if (isset($_SESSION['is_guest']) && $_SESSION['is_guest'] === true) {
 <head>
    <title>Dashboard - Zeitstrahl</title>
    <link rel="stylesheet" href="./style.css">
-   <!-- <script src="./js/language.js" defer></script> -->
-   <script src="./js/download_page.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
    <script src="./js/timeline.js" defer></script>
    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
@@ -28,7 +26,6 @@ if (isset($_SESSION['is_guest']) && $_SESSION['is_guest'] === true) {
    <div class="nav">
       <a href="logout"><button class="btn btn--main btn--nav" lang="de" data-translate="nav.logout">Abmelden</button></a>
       <a href="dashboard"><button class="btn btn--main btn--nav" lang="de" data-translate="nav.back">Zurück</button></a>
-      <!-- <a href="#" pdfName="timeline_patrick_kaserer" id="downloadPdf"><button class="btn btn--main btn--nav" lang="de" data-translate="nav.download_pdf">Download als PDF</button></a> -->
    </div>
 
    <div class="container_dashboard">

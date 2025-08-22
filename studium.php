@@ -9,7 +9,6 @@ require './includes/auth.php';
    <title>Dashboard - Medieninformatik</title>
    <link rel="stylesheet" href="./style.css">
    <script src="./js/accordion.js" defer></script>
-   <script src="./js/download_page.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />

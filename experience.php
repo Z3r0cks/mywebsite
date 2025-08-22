@@ -9,7 +9,7 @@ require './includes/auth.php';
    <title>Dashboard - Experience</title>
    <link rel="stylesheet" href="./style.css">
    <script src="./js/accordion.js" defer></script>
-   <script src="./js/download_page.js" defer></script>
+   <script src="./js/video-controls.js" defer></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
    <link rel="icon" type="image/svg+xml" href="./assets/favicons/favicon.svg" />
@@ -26,7 +26,7 @@ require './includes/auth.php';
    <div class="container_dashboard">
       <h1>Erfahrungen</h1>
 
-      <button class="accordion">Fullstack Softwareentwickler/KI</button>
+      <button class="accordion accordion--bg">Fullstack Softwareentwickler/KI</button>
       <div class="panel">
          <p style="text-align: justify;">
             Im Rahmen meiner Tätigkeit als Fullstack-Entwickler war ich in den letzten sechs Monaten an der Entwicklung und Weiterentwicklung einer webbasierten Logistikplattform beteiligt. Aufgabe der Software ist die Echtzeitvisualisierung und Steuerung des Materialflusses in einem Lager. Meine Aufgaben umfassten sowohl Backend- als auch Frontend-Entwicklung – von der Gestaltung nutzerfreundlicher Oberflächen bis hin zur effizienten Datenverarbeitung und -bereitstellung.
@@ -38,7 +38,7 @@ require './includes/auth.php';
       </div>
 
 
-      <button class="accordion">Hochschullehre</button>
+      <button class="accordion accordion--bg">Hochschullehre</button>
       <div class="panel">
          <video class="ml-2" style="clear:right; float: right" width="480" autoplay controls loop muted>
             <source src="./assets/videos/teaching.mp4">
@@ -48,7 +48,7 @@ require './includes/auth.php';
       </div>
 
 
-      <button class="accordion">Forschungsprojekt - Frühstücks-Checks</button>
+      <button class="accordion accordion--bg">Forschungsprojekt - Frühstücks-Checks</button>
       <div class="panel">
 
          <video class="mr-2" style="clear:left; float: left" width="360" controls>
@@ -60,7 +60,7 @@ require './includes/auth.php';
       </div>
 
 
-      <button class="accordion">Masterthesis - Synthesized Sensor Data from Neural Radiance Fields</button>
+      <button class="accordion accordion--bg">Masterthesis - Synthesized Sensor Data from Neural Radiance Fields</button>
       <div class="panel">
 
          <p style="text-align: justify;">Die Forschungsfrage hinter meiner Masterthesis war, ob sich ein LiDAR-Sensor in einem Neural Radiance Fields (NeRF) synthetisieren lässt. Ein NeRF ist eine KI-basierte Methode zum Erstellen einer 3D-Szenen-repräsentation, die aus 2D-Input (Bildern) die Szene fotorealistisch in Echtzeit darstellen kann, in der sich frei bewegt werden kann. Dadurch, dass es unendlich verschiedene Arten von LiDAR-Sensoren geben kann, war die Idee, dass von einer Szene Bilder aufgenommen werden und die Anwendung verwendet wird, um zu entscheiden, welcher Sensor für welche Installation am besten geeignet wäre. Die Herausforderung lag daran, dass das neuronale Netz eine Blackbox ist und die einzelnen Koordinaten und Objekte in der Szene lediglich perspektivisch dargestellt werden. NeRF selbst lernt nur, den RGB-Wert und den Dichtewert an jeder Stelle des Raums zu approximieren. Somit sind Distanzen und Positionen von Objekten in der Szene nicht bekannt. Die Verwendung von anderen Methoden zur 3D-Szenenrepräsentation ist meist mit einem größeren Aufwand verbunden oder führt zu einem weniger genauen Ergebnis. Meine entwickelte Anwendung ist dazu in der Lage, aus jeder beliebigen Perspektive bis weniger als ein mm die Distanz zu jedem Punkt zu messen und dadurch Punktwolken zu erstellen, die mögliche LiDAR-Sensoren repräsentieren können. <br> Auf den Bildern sind zwei verschiedene NeRF-Szenen (keine echten Bilder) von einer echten Szene, in der eine Punktwolke erstellt wurde. In der Mitte anschließend ein Plot der Punktwolke und rechts eine Distanzmessung von einem Origin zu einem Punkt im Raum.</p>
@@ -72,7 +72,7 @@ require './includes/auth.php';
       </div>
 
 
-      <button class="accordion">Praktisches Studiensemester - dreiQbik</button>
+      <button class="accordion accordion--bg">Praktisches Studiensemester - dreiQbik</button>
       <div class="panel">
          <p style="text-align: justify;"> Während des Bachelors absolvierte ich mein praktisches Studiensemester bei der Webagentur dreiQbik in Karlsruhe. Schwerpunkt war die Fullstack-Entwicklung von indviduellen Webanwendungen für Unternehmen. Der USP war die Verwendung von CMS WordPress als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Hierbei wurde WordPress nicht verwendet, um die Anwendung über das CMS als Baukasten zu füllen, sondern WordPress diente als Backend, auf dem die individuelle Webanwendung entwickelt wurde. Der Kunde konnte anschließend mit für ihn entwickelten Custom-Fields die Inhalte selbst befüllen.</p>
 
@@ -85,7 +85,7 @@ require './includes/auth.php';
       </div>
 
 
-      <button class="accordion">Projektstudium - Website: "Blind MeetUp"</button>
+      <button class="accordion accordion--bg">Projektstudium - Website: "Blind MeetUp"</button>
       <div class="panel">
          <p style="text-align: justify;">Die Hochschule Furtwangen ist als Hochschule für angewandte Wissenschaften eine praktisch orientierte Hochschule. Alle Studiengänge in der Fakultät mussten ein Projektstudium absolvieren, das sich über zwei Semester zieht. Hierbei geht es darum, die gelernten Inhalte in einem eigenen, von den Studierenden entwickelten Projekt unter Beweis zu stellen. In einem 6-köpfigen Team wurde hier die eigens konzipierte Webanwendung "Blind MeetUp" entwickelt. Die Idee dahinter war, eine Plattform für Studierende der Hochschule anzubieten, bei der sich die Studierenden anonym zu zweit oder in Gruppen treffen können.</p>
 

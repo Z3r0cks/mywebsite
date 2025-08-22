@@ -10,31 +10,49 @@
       justify-content: space-between;
       flex-direction: column;
       margin-bottom: 3rem;
+      align-items: center;
+      
+      @include breakpoint("lg") {
+         align-items: flex-start;
+      }
 
       &__container {
          display: flex;
          flex-direction: column;
+         align-items: center;
+
+         @include breakpoint("lg") {
+            align-items: flex-start;
+         }
       }
    }
 
    &__img {
       display: block;
-      align-self: flex-start;
       padding: 0;
       margin: 0;
-
-      @include breakpoint("md") {
-         width: 80%;
-      }
-
-      @include breakpoint("lg") {
-         width: 100%;
-      }
 
       &--img {
          width: 100%;
          border-radius: $border-radius_image;
          box-shadow: 0 4px 15px rgba($c-black, 0.8);
+         align-self: center;
+      }
+      @include breakpoint("md") {
+         width: 80%;
+      }
+
+      @include breakpoint("lg") {
+         align-self: flex-start;
+         width: 90%;
+      }
+
+      @include breakpoint("xl") {
+         width: 95%;
+      }
+
+      @include breakpoint("xxl") {
+         width: 100%;
       }
    }
 
@@ -53,16 +71,17 @@
       }
 
       @include breakpoint("lg") {
-         font-size: 1rem;
+         font-size: 1.03rem;
          line-height: 10px;
       }
 
       @include breakpoint("xl") {
+         font-size: 1.0rem;
          line-height: 11px;
       }
-
+      
       @include breakpoint("xxl") {
-         font-size: 1.1rem;
+         font-size: 1.2rem;
          line-height: 12px;
       }
    }
@@ -77,12 +96,19 @@
          margin-bottom: 3rem;
       }
 
-      @include breakpoint("lg") {
-         font-size: 1.2vw;
-         margin-left: 1rem;
+      @include breakpoint("md") {
+         font-size: 2.2vw;
+         line-height: 1.2;
       }
 
-      @include breakpoint("xl") {
+      @include breakpoint("lg") {
+         line-height: 1.27;
+         font-size: 0.8rem;
+         margin-left: 1rem;
+      }
+      
+      @include breakpoint("xxl") {
+         line-height: 1.2;
          font-size: 1rem;
       }
    }
@@ -90,6 +116,73 @@
    @include breakpoint("lg") {
       flex-direction: row;
       margin-bottom: 5rem;
+   }
+}
+
+/* --------------------------------------------------
+Animations for interactive code elements
+-------------------------------------------------- */
+
+@keyframes blink-cursor {
+   0%,
+   50% {
+      opacity: 1;
+   }
+   51%,
+   100% {
+      opacity: 0;
+   }
+}
+
+@keyframes pulse-glow {
+   0%,
+   100% {
+      text-shadow: 0 0 5px rgba($c1-second, 0.3);
+   }
+   50% {
+      text-shadow:
+         0 0 10px rgba($c1-second, 0.6),
+         0 0 15px rgba($c1-second, 0.4);
+   }
+}
+
+@keyframes typewriter-line {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 100%;
+   }
+}
+
+.terminal-cursor {
+   animation: blink-cursor 1.2s infinite;
+   font-weight: bold;
+}
+
+.code-line-glow {
+   &.highlight {
+      animation: pulse-glow 2s infinite;
+   }
+}
+
+.lp_header__pre-code {
+   .terminal-prompt::after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background-color: $c1-second;
+      margin-left: 2px;
+      animation: blink-cursor 1.2s infinite;
+   }
+
+   .code-function {
+      transition: color $transition;
+
+      &:hover {
+         text-shadow: 0 0 5px rgba($c1-second, 0.5);
+      }
    }
 }
 

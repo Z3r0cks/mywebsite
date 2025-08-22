@@ -76,3 +76,42 @@
 .bg-error {
    background-color: $c-error !important;
 }
+
+// code
+
+.c-func-pre {
+   color: $c-func-pre !important;
+}
+.c-func {
+   color: $c-func !important;
+}
+.c-var {
+   color: $c-var !important;
+}
+.c-string {
+   color: $c-string !important;
+}
+.c-return {
+   color: $c-return !important;
+}
+.c-comment {
+   color: $c-comment !important;
+}
+.c-keyword {
+   color: $c-keyword !important;
+}
+.c-number {
+   color: $c-number !important;
+}
+.c-boolean {
+   color: $c-boolean !important;
+}
+.c-null {
+   color: $c-null !important;
+}
+.c-undefined {
+   color: $c-undefined !important;
+}
+.c-exec {
+   color: $c-exec !important;
+}

@@ -7,45 +7,64 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize all accordions
     for (let i = 0; i < accordions.length; i++) {
-        accordions[i].addEventListener("click", function() {
-            // Toggle active state
-            this.classList.toggle("active");
-            
-            // Get the panel
-            const panel = this.nextElementSibling;
-            
-            if (panel.style.display === "block") {
-                // Close panel with animation
-                panel.classList.remove("show");
-                setTimeout(() => {
-                    panel.style.display = "none";
-                }, 300);
-            } else {
-                // Open panel with animation
-                panel.style.display = "block";
-                setTimeout(() => {
-                    panel.classList.add("show");
-                }, 10);
-            }
-        });
+        const panel = accordions[i].nextElementSibling;
+        
+        // Temporarily make the panel fully visible to measure its natural size
+        panel.style.display = "block";
+        panel.style.height = "auto";
+        panel.style.overflow = "visible";
+        panel.style.visibility = "hidden"; // Hide visually but keep in layout
+        
+        // Force browser to calculate layout
+        panel.offsetHeight;
+        
+        // Now measure the actual height
+        const naturalHeight = panel.offsetHeight;
+        
+        // Store the measured height
+        panel.dataset.originalHeight = naturalHeight + "px";
+        
+        // Now set the panel for animation
+        panel.style.visibility = "visible";
+        panel.style.overflow = "hidden";
+        panel.style.height = "0px";
+        panel.style.transition = "height 0.3s ease-in-out";
     }
     
-    // Optional: Close other accordions when one is opened (uncomment if desired)
-    /*
+    // Add click event listeners
     for (let i = 0; i < accordions.length; i++) {
         accordions[i].addEventListener("click", function() {
-            // Close all other accordions
-            for (let j = 0; j < accordions.length; j++) {
-                if (j !== i && accordions[j].classList.contains("active")) {
-                    accordions[j].classList.remove("active");
-                    const otherPanel = accordions[j].nextElementSibling;
-                    otherPanel.classList.remove("show");
-                    setTimeout(() => {
-                        otherPanel.style.display = "none";
-                    }, 300);
-                }
+            
+            const panel = this.nextElementSibling;
+            const isCurrentlyOpen = this.classList.contains("active");
+            
+            if (isCurrentlyOpen) {
+                // Close panel
+                this.classList.remove("active");
+                
+                // First set current height in pixels (in case it's "auto")
+                const currentHeight = panel.offsetHeight;
+                panel.style.height = currentHeight + "px";
+                
+                // Force reflow
+                panel.offsetHeight;
+                
+                // Now animate to 0
+                panel.style.height = "0px";
+            } else {
+                // Open panel
+                this.classList.add("active");
+                // Use stored natural height
+                const fullHeight = panel.dataset.originalHeight;
+                panel.style.height = fullHeight;
+                
+                // Set to auto after animation
+                setTimeout(() => {
+                    if (this.classList.contains("active")) {
+                        panel.style.height = "auto";
+                    }
+                }, 310);
             }
         });
     }
-    */
 });
