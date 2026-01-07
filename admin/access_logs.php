@@ -130,12 +130,14 @@ function geolocateIps(array $ips): array {
 				'city' => $data['city'] ?? '',
 				'lat' => $data['lat'] ?? null,
 				'lon' => $data['lon'] ?? null,
+				'isp' => $data['isp'] ?? '',
+				'as' => $data['as'] ?? '',
 				'_ts' => $now,
 			];
 			$cache[$ip] = $entry;
 			$result[$ip] = $entry;
 		} else {
-			$cache[$ip] = ['country' => '', 'region' => '', 'city' => '', 'lat' => null, 'lon' => null, '_ts' => $now];
+			$cache[$ip] = ['country' => '', 'region' => '', 'city' => '', 'lat' => null, 'lon' => null, 'isp' => '', 'as' => '', '_ts' => $now];
 			$result[$ip] = $cache[$ip];
 		}
 		// Be gentle to API
@@ -306,7 +308,23 @@ $sortedHourlyCounts = $hourlyCounts; ksort($sortedHourlyCounts);
 					<div class="" style="display:block">
 						<strong>Top IPs</strong>
 						<div>
-							<?php $i = 0; foreach ($sortedIpCounts as $ip => $cnt) { if ($i++ >= 10) break; $geo = $geoByIp[$ip] ?? null; $loc = $geo ? implode(', ', array_filter([$geo['city'] ?? '', $geo['region'] ?? '', $geo['country'] ?? ''])) : ''; echo '<div>' . htmlspecialchars($ip) . ' (' . (int)$cnt . ') ' . ($loc !== '' ? '– ' . htmlspecialchars($loc) : '') . '</div>'; } ?>
+							<?php 
+							$i = 0; 
+							foreach ($sortedIpCounts as $ip => $cnt) { 
+								if ($i++ >= 10) break; 
+								$geo = $geoByIp[$ip] ?? null; 
+								$loc = $geo ? implode(', ', array_filter([$geo['city'] ?? '', $geo['region'] ?? '', $geo['country'] ?? ''])) : ''; 
+								
+								$isp = $geo['isp'] ?? '';
+								$as = $geo['as'] ?? '';
+								$net = [];
+								if ($isp !== '') $net[] = $isp;
+								if ($as !== '') $net[] = $as;
+								$netStr = implode(', ', $net);
+
+								echo '<div>' . htmlspecialchars($ip) . ' (' . (int)$cnt . ') ' . ($loc !== '' ? '– ' . htmlspecialchars($loc) : '') . ($netStr !== '' ? ' – <small>' . htmlspecialchars($netStr) . '</small>' : '') . '</div>'; 
+							} 
+							?>
 						</div>
 					</div>
 					<div class="" style="display:block">

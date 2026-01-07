@@ -44,15 +44,13 @@ $assetBase = (strpos($currentDir, '/admin') !== false) ? '../' : './';
         <a class="site-footer__icon-link" href="https://www.xing.com/profile/Patrick_Kaserer" aria-label="Xing" target="_blank" rel="noopener">
           <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/xing_logo.png" alt="Xing" />
         </a>
-        <a class="site-footer__icon-link" href="https://github.com/Z3r0cks" aria-label="GitHub" target="_blank" rel="noopener">
+        <a class="site-footer__icon-link" href="https://github.com/pKaserr" aria-label="GitHub" target="_blank" rel="noopener">
           <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/github_logo.png" alt="GitHub" />
         </a>
-        <a class="site-footer__icon-link" href="mailto:mail@patrick-kaserer.de" aria-label="E-Mail">
+        <a class="site-footer__icon-link" href="mailto:kaserer.patrick@gmail.com" aria-label="E-Mail">
           <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/mail.png" alt="E-Mail" />
         </a>
       </div>
     </div>
   </div>
 </footer>
-
-

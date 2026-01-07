@@ -100,7 +100,7 @@ if (empty($_SESSION['csrf_token'])) {
                 <a href=https://www.xing.com/profile/Patrick_Kaserer>
                     <img class="link_logo link_logo--xing" src="./assets/img/xing_logo.png" alt=Xing>
                 </a>
-                <a href=https://github.com/Z3r0cks>
+                <a href=https://github.com/pKaserr>
                     <img class="link_logo link_logo--github" src="./assets/img/github_logo.png" alt=Github></a>
                 <a href="mailto:mail@patrick-kaserer.de"><img class="link_logo link_logo--mail" src=./assets/img/mail.png alt=Mail></a>
             </div>
