@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 4px 15px rgba($c-black, 0.1);
+  box-shadow: 0 4px 15px rgba($c-black, 0.4);
   
   &-icon {
     font-size: 1.5rem;
@@ -60,16 +60,19 @@
   padding: 0 1rem;
   margin-bottom: 2rem;
   transition: height 0.3s ease-in-out;
-  box-shadow: 0 4px 15px rgba($c-black, 0.05);
+  box-shadow: 0 4px 15px rgba($c-black, 0.4);
+  border-radius: $border-radius_small;
+  background-color: #2a2a2a;
+  line-height: 1.6;
   
   &-content {
     padding: 2rem;
-    background: linear-gradient(135deg, $c-beige 0%, $c-white 100%);
+    // background: linear-gradient(135deg, $c1-main 0%, $c-white 100%);
     
     p {
       line-height: 1.7;
       margin-bottom: 1.5rem;
-      color: $c2-main;
+      color: $c3-second;
       font-size: 1.05rem;
       
       &:last-child {
@@ -77,9 +80,9 @@
       }
     }
     
-    strong {
-      color: $c1-main;
-    }
+    // strong {
+    //   color: $c-white;
+    // }
     
     ul {
       margin: 1rem 0;

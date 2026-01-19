@@ -1,6 +1,5 @@
 html {
    padding-top: 2rem;
-   padding-bottom: 2rem;
 }
 
 .container {
@@ -29,7 +28,6 @@ html {
    &__title {
       padding: 1rem;
       margin-bottom: 2rem;
-      border: 1px solid $c-darkGrey;
       
       span {
          font-size: 1rem !important;

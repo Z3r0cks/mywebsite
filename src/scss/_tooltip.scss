@@ -1,0 +1,33 @@
+.no-access-banner {
+    display: none !important;
+
+    @include breakpoint("xs") {
+        display: block !important;
+        top: 50% !important;
+        left: 50% !important;
+        // transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -60%) rotate(-26deg) !important;
+        background-color: $c-warn;
+        color: $c-black !important;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 0.7rem !important;
+        white-space: nowrap;
+        z-index: 9999;
+    }
+    @include breakpoint("sm") {
+        font-size: 0.7rem !important;
+    }
+
+    @include breakpoint("lg") {
+        font-size: 0.9rem !important;
+    }
+
+    @include breakpoint("xl") {
+        font-size: 1rem !important;
+    }
+
+    @include breakpoint("xxl") {
+        font-size: 1.2rem !important;
+    }
+}

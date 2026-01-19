@@ -4,7 +4,7 @@
   // bottom: 0;
   // right: 0;
   // left: 0;
-  background-color: $c1-main;
+  background-color: $footer_bg-color;
   color: $c-white;
   padding: 16px 0;
   border-top: 1px solid $c-darkGrey;
@@ -18,7 +18,7 @@
       justify-content: center;
       gap: 12px;
       padding: 16px 0;
-      background-color: $c1-main;
+      background-color: $footer_bg-color;
       color: $c-white;
       border-top: 1px solid $c1-main;
     }
@@ -62,12 +62,12 @@
 
   &__icon-link {
     display: inline-flex;
-    align-items: center;
+    align-items: center;  
     justify-content: center;
     width: 28px !important;
     height: 28px !important;
     border-radius: $border-radius-round;
-    background: $c-darkGrey;
+    background: $footer_bg-color;
     transition:
       background $transition,
       transform $transition;
@@ -83,4 +83,15 @@
     height: 18px;
     display: block;
   }
+}
+
+#char-count {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: $c-lightGrey;
+}
+
+#footer-contact-message {
+  margin-bottom: 0;
 }

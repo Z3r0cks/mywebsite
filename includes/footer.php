@@ -17,18 +17,19 @@ $assetBase = (strpos($currentDir, '/admin') !== false) ? '../' : './';
           <div class="site-footer__data">
             <div class="site-footer__data--item">
               <label for="footer-contact-name" data-translate="footer.contact.name">Name</label>
-              <input type="text" id="footer-contact-name" name="name" required autocomplete="name" />
+              <input type="text" placeholder="Name oder Unternehmen..." id="footer-contact-name" name="name" required autocomplete="name" />
             </div>
             <div class="site-footer__data--item">
               <label for="footer-contact-email" data-translate="footer.contact.email">E-Mail</label>
-              <input type="email" id="footer-contact-email" name="email" required autocomplete="email" v>
+              <input type="email" id="footer-contact-email" name="email" required autocomplete="email" value="">
             </div>
         </div>
-          <div class="">
+          <div>
             <label for="footer-contact-message" data-translate="footer.contact.message">Nachricht</label>
-            <textarea maxlength="2000" id="footer-contact-message" name="message" rows="3" required></textarea>
+            <textarea maxlength="3500" placeholder="Kurze Beschreibung wer Sie sind und was die Gründe für die Kontaktaufnahme sind.." id="footer-contact-message" name="message" rows="3" required></textarea>
+            <span id="char-count"></span>
           </div>
-          <div class="">
+          <div >
             <button type="submit" class="btn btn--main" data-translate="footer.contact.send">Absenden</button>
         </div>
       </form>
@@ -41,9 +42,6 @@ $assetBase = (strpos($currentDir, '/admin') !== false) ? '../' : './';
         <a class="site-footer__icon-link" href="https://www.linkedin.com/in/patrick-kaserer/" aria-label="LinkedIn" target="_blank" rel="noopener">
           <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/linkedin_logo.png" alt="LinkedIn" />
         </a>
-        <a class="site-footer__icon-link" href="https://www.xing.com/profile/Patrick_Kaserer" aria-label="Xing" target="_blank" rel="noopener">
-          <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/xing_logo.png" alt="Xing" />
-        </a>
         <a class="site-footer__icon-link" href="https://github.com/pKaserr" aria-label="GitHub" target="_blank" rel="noopener">
           <img class="site-footer__icon" src="<?= htmlspecialchars($assetBase) ?>assets/img/github_logo.png" alt="GitHub" />
         </a>
@@ -54,3 +52,4 @@ $assetBase = (strpos($currentDir, '/admin') !== false) ? '../' : './';
     </div>
   </div>
 </footer>
+<script src="<?= htmlspecialchars($assetBase) ?>js/footer.js"></script>
